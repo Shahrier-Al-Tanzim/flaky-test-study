@@ -1,0 +1,70 @@
+# ---------------------------------------------------------------
+# Private research notes — kept out of the repo deliberately
+# ---------------------------------------------------------------
+planning/
+
+# ---------------------------------------------------------------
+# Cloned upstream repositories — NOT ours to commit.
+# These are other people's projects, each with its own .git folder.
+# Committing them would either break (nested repos) or vendor
+# someone else's code under our name. Anyone reproducing this work
+# clones them fresh per planning/tsvd4j_run.md.
+# ---------------------------------------------------------------
+flaky-study/TSVD4J/
+flaky-study/Java-WebSocket/
+flaky-study/idoft/
+flaky-study/iDFlakies/
+flaky-study/nondex/
+flaky-study/FlakyLens/
+flaky-study/FlakeSync/
+flaky-study/rxjava2-extras/
+flaky-study/fluent-logger-java/
+flaky-study/delight-nashorn-sandbox/
+flaky-study/marine-api/
+flaky-study/openpojo/
+flaky-study/commons-dbcp/
+flaky-study/commons-pool-src/
+
+# ---------------------------------------------------------------
+# Tool output and build artifacts
+# ---------------------------------------------------------------
+.tsvd4j/
+target/
+**/target/
+*.class
+*.jar
+*.log
+surefire-reports/
+idflakies-output/
+idflakies-report/
+.nondex/
+
+# ---------------------------------------------------------------
+# Exception: findings/ holds copies of logs + reports we DO want on
+# GitHub. Un-ignore it against the *.log / target / surefire-reports
+# rules above (a leading "!" only works if no parent directory was
+# already excluded, which is true here — findings/ isn't matched by
+# any rule above).
+# ---------------------------------------------------------------
+!findings/
+!findings/**
+
+# ---------------------------------------------------------------
+# Python (papers/_extract.py scratch)
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---------------------------------------------------------------
+# Editors / IDEs / OS
+# ---------------------------------------------------------------
+.idea/
+*.iml
+.vscode/
+.claude/
+Thumbs.db
+desktop.ini
+*~
+*.swp
