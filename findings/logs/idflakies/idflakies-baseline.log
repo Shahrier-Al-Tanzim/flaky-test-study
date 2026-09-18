@@ -1,0 +1,138 @@
+pool-2-thread-2: a
+loop 0
+pool-2-thread-6: hello there
+pool-2-thread-2: hello there
+pool-2-thread-3: hell
+pool-2-thread-6: 1234
+pool-2-thread-7: 
+pool-2-thread-9: hello there
+io.reactivex.exceptions.UndeliverableException: The exception could not be delivered to the consumer because it has already canceled/disposed the flow or the exception has nowhere to go to begin with. Further reading: https://github.com/ReactiveX/RxJava/wiki/What's-different-in-2.0#error-handling | com.github.davidmoten.rx2.exceptions.ThrowingException
+1
+2
+3
+1
+2
+3
+5
+main: boo
+main|schedId=[com.github.davidmoten.rx2.SchedulerHelperTest:testWithCallSite:47]
+io.reactivex.exceptions.UndeliverableException: The exception could not be delivered to the consumer because it has already canceled/disposed the flow or the exception has nowhere to go to begin with. Further reading: https://github.com/ReactiveX/RxJava/wiki/What's-different-in-2.0#error-handling | java.io.IOException: boo
+	at io.reactivex.plugins.RxJavaPlugins.onError(RxJavaPlugins.java:367)
+	at com.github.davidmoten.rx2.internal.flowable.FlowableInsertMaybe$InsertSubscriber.onError(FlowableInsertMaybe.java:115)
+	at com.github.davidmoten.rx2.flowable.TransformersTest$2$1.request(TransformersTest.java:231)
+	at com.github.davidmoten.rx2.internal.flowable.FlowableInsertMaybe$InsertSubscriber.request(FlowableInsertMaybe.java:204)
+	at io.reactivex.subscribers.TestSubscriber.onSubscribe(TestSubscriber.java:174)
+	at com.github.davidmoten.rx2.internal.flowable.FlowableInsertMaybe$InsertSubscriber.onSubscribe(FlowableInsertMaybe.java:81)
+	at com.github.davidmoten.rx2.flowable.TransformersTest$2.subscribeActual(TransformersTest.java:222)
+	at io.reactivex.Flowable.subscribe(Flowable.java:14935)
+	at com.github.davidmoten.rx2.internal.flowable.FlowableInsertMaybe.subscribeActual(FlowableInsertMaybe.java:39)
+	at io.reactivex.Flowable.subscribe(Flowable.java:14935)
+	at io.reactivex.Flowable.test(Flowable.java:18639)
+	at com.github.davidmoten.rx2.flowable.TransformersTest.countMapperCalls(TransformersTest.java:243)
+	at com.github.davidmoten.rx2.flowable.TransformersTest.testInsertNoOnNextOrErrorEventsProcessedAfterMapperError(TransformersTest.java:204)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.io.IOException: boo
+	... 39 more
+Exception in thread "main" io.reactivex.exceptions.UndeliverableException: The exception could not be delivered to the consumer because it has already canceled/disposed the flow or the exception has nowhere to go to begin with. Further reading: https://github.com/ReactiveX/RxJava/wiki/What's-different-in-2.0#error-handling | java.io.IOException: boo
+	at io.reactivex.plugins.RxJavaPlugins.onError(RxJavaPlugins.java:367)
+	at com.github.davidmoten.rx2.internal.flowable.FlowableInsertMaybe$InsertSubscriber.onError(FlowableInsertMaybe.java:115)
+	at com.github.davidmoten.rx2.flowable.TransformersTest$2$1.request(TransformersTest.java:231)
+	at com.github.davidmoten.rx2.internal.flowable.FlowableInsertMaybe$InsertSubscriber.request(FlowableInsertMaybe.java:204)
+	at io.reactivex.subscribers.TestSubscriber.onSubscribe(TestSubscriber.java:174)
+	at com.github.davidmoten.rx2.internal.flowable.FlowableInsertMaybe$InsertSubscriber.onSubscribe(FlowableInsertMaybe.java:81)
+	at com.github.davidmoten.rx2.flowable.TransformersTest$2.subscribeActual(TransformersTest.java:222)
+	at io.reactivex.Flowable.subscribe(Flowable.java:14935)
+	at com.github.davidmoten.rx2.internal.flowable.FlowableInsertMaybe.subscribeActual(FlowableInsertMaybe.java:39)
+	at io.reactivex.Flowable.subscribe(Flowable.java:14935)
+	at io.reactivex.Flowable.test(Flowable.java:18639)
+	at com.github.davidmoten.rx2.flowable.TransformersTest.countMapperCalls(TransformersTest.java:243)
+	at com.github.davidmoten.rx2.flowable.TransformersTest.testInsertNoOnNextOrErrorEventsProcessedAfterMapperError(TransformersTest.java:204)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.io.IOException: boo
+	... 39 more
+WARN: boo
+waiting for 60000ms
+WARN: boo
+waiting for 120000ms
+WARN: boo
+waiting for 60000ms
+WARN: boo
+waiting for 60000ms
+WARN: boo
+waiting for 10ms
+WARN: boo
+waiting for 20ms
+WARN: boo
+waiting for 40ms
+WARN: boo
+waiting for 80ms
+WARN: boo
+waiting for 160ms
+testCancel
+testCancelObservable
+testing fragments sync
+LITTLE_ENDIAN
+byte arrays sync rate = 45.455MB/s
+65536
+byte arrays async 1K rate = 280.702MB/s, msgs/sec = 287438.596
+byte arrays async rate = 96.154MB/s, msgs/sec = 2520615.385
+byte arrays async rebatched rate = 96.154MB/s, msgs/sec=2520615.385
+byte arrays async rate obs = 73.529MB/s, msgs/sec = 1927529.412
+
+real	1m3.473s
+user	0m43.678s
+sys	0m5.375s

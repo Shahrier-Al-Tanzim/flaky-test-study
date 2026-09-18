@@ -1,0 +1,93 @@
+[INFO] Scanning for projects...
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: 
+The plugin org.apache.maven.plugins:maven-resources-plugin:4.0.0-beta-1 has unmet prerequisites: 
+	Required Java version 17 is not met by current version: 11.0.32
+	Required Maven version 4.0.0-beta-3 is not met by current version 3.9.12
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-resources-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-resources-plugin
+[INFO] Selected plugin org.apache.maven.plugins:maven-resources-plugin:3.5.0
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-3: 
+The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-3 has unmet prerequisites: 
+	Required Java version 17 is not met by current version: 11.0.32
+	Required Maven version 4.0.0-rc-6 is not met by current version 3.9.12
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-install-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-install-plugin
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-2: 
+The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-2 has unmet prerequisites: 
+	Required Java version 17 is not met by current version: 11.0.32
+	Required Maven version 4.0.0-rc-2 is not met by current version 3.9.12
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: 
+The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-1 has unmet prerequisites: 
+	Required Java version 17 is not met by current version: 11.0.32
+	Required Maven version 4.0.0-beta-3 is not met by current version 3.9.12
+[INFO] Selected plugin org.apache.maven.plugins:maven-install-plugin:3.2.0
+[INFO] 
+[INFO] ---------------------< net.sf.marineapi:marineapi >---------------------
+[INFO] Building Java Marine API 0.12.0
+[INFO]   from pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ marineapi >>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven) @ marineapi ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ marineapi ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ marineapi ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ marineapi ---
+[INFO] Copying 10 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ marineapi ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ marineapi <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ marineapi ---
+INFO: No timeout specified. Using randomize.rounds: 20
+INFO: ROUNDS_CALCULATED: Giving net.sf.marineapi:marineapi:0.12.0 20 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 1084 tests. Time taken: 0.45799994468688965 seconds
+INFO: Using original order in path: /home/tanzim/flaky-study/marine-api/.dtfixingtools/original-order
+INFO: Using original order in path: /home/tanzim/flaky-study/marine-api/.dtfixingtools/original-order
+INFO: Using original order in path: /home/tanzim/flaky-study/marine-api/.dtfixingtools/original-order
+[INFO] Getting original results (1084 tests).
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 20 (0.0 seconds elapsed (4.0 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 20 (4.0 seconds elapsed (7.9 total), 35.8 seconds remaining).
+[INFO] Found 0 tests in round 3 of 20 (7.9 seconds elapsed (11.9 total), 44.9 seconds remaining).
+[INFO] Found 0 tests in round 4 of 20 (11.9 seconds elapsed (15.9 total), 47.8 seconds remaining).
+[INFO] Found 0 tests in round 5 of 20 (15.9 seconds elapsed (19.8 total), 47.6 seconds remaining).
+[INFO] Found 0 tests in round 6 of 20 (19.8 seconds elapsed (23.8 total), 46.2 seconds remaining).
+[INFO] Found 0 tests in round 7 of 20 (23.8 seconds elapsed (27.7 total), 44.1 seconds remaining).
+[INFO] Found 0 tests in round 8 of 20 (27.7 seconds elapsed (31.6 total), 41.5 seconds remaining).
+[INFO] Found 0 tests in round 9 of 20 (31.6 seconds elapsed (35.5 total), 38.6 seconds remaining).
+[INFO] Found 0 tests in round 10 of 20 (35.5 seconds elapsed (39.3 total), 35.5 seconds remaining).
+[INFO] Found 0 tests in round 11 of 20 (39.3 seconds elapsed (43.3 total), 32.2 seconds remaining).
+[INFO] Found 0 tests in round 12 of 20 (43.3 seconds elapsed (47.2 total), 28.9 seconds remaining).
+[INFO] Found 0 tests in round 13 of 20 (47.2 seconds elapsed (51.2 total), 25.4 seconds remaining).
+[INFO] Found 0 tests in round 14 of 20 (51.2 seconds elapsed (55.1 total), 21.9 seconds remaining).
+[INFO] Found 0 tests in round 15 of 20 (55.1 seconds elapsed (59.1 total), 18.4 seconds remaining).
+[INFO] Found 0 tests in round 16 of 20 (59.1 seconds elapsed (63.0 total), 14.8 seconds remaining).
+[INFO] Found 0 tests in round 17 of 20 (63.0 seconds elapsed (66.9 total), 11.1 seconds remaining).
+[INFO] Found 0 tests in round 18 of 20 (66.9 seconds elapsed (70.8 total), 7.4 seconds remaining).
+[INFO] Found 0 tests in round 19 of 20 (70.8 seconds elapsed (74.7 total), 3.7 seconds remaining).
+[INFO] Found 0 tests in round 20 of 20 (74.7 seconds elapsed (78.6 total), 0.0 seconds remaining).
+
+[INFO] Found 0 tests, writing list to /home/tanzim/flaky-study/marine-api/.dtfixingtools/detection-results/list.txt and dt lists to /home/tanzim/flaky-study/marine-api/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+COPY_FAILING_TEST_OUTPUT: /home/tanzim/flaky-study/marine-api/failing-test-output-1789734952512-933b1624-5189-43a7-989b-d66213c8b334
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:25 min
+[INFO] Finished at: 2026-09-18T19:37:19+06:00
+[INFO] ------------------------------------------------------------------------
+
+real	1m26.813s
+user	2m3.003s
+sys	0m9.667s

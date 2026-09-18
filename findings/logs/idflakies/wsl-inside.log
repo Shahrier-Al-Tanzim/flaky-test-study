@@ -1,0 +1,13 @@
+Distributor ID:	Ubuntu
+Description:	Ubuntu 26.04 LTS
+Release:	26.04
+Codename:	resolute
+/usr/bin/java
+/mnt/c/Thesis/Automate Testing/apache-maven-3.9.11-bin/apache-maven-3.9.11/bin/mvn
+/usr/bin/git
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G   16G  941G   2% /
+12
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       540Mi       6.6Gi       5.9Mi       732Mi       7.2Gi
+Swap:          2.0Gi          0B       2.0Gi

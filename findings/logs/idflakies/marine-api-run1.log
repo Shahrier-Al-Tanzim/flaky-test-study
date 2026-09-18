@@ -1,0 +1,76 @@
+[INFO] Scanning for projects...
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: 
+The plugin org.apache.maven.plugins:maven-resources-plugin:4.0.0-beta-1 has unmet prerequisites: 
+	Required Java version 17 is not met by current version: 11.0.32
+	Required Maven version 4.0.0-beta-3 is not met by current version 3.9.12
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-resources-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-resources-plugin
+[INFO] Selected plugin org.apache.maven.plugins:maven-resources-plugin:3.5.0
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-3: 
+The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-3 has unmet prerequisites: 
+	Required Java version 17 is not met by current version: 11.0.32
+	Required Maven version 4.0.0-rc-6 is not met by current version 3.9.12
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-install-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-install-plugin
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-2: 
+The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-2 has unmet prerequisites: 
+	Required Java version 17 is not met by current version: 11.0.32
+	Required Maven version 4.0.0-rc-2 is not met by current version 3.9.12
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: 
+The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-1 has unmet prerequisites: 
+	Required Java version 17 is not met by current version: 11.0.32
+	Required Maven version 4.0.0-beta-3 is not met by current version 3.9.12
+[INFO] Selected plugin org.apache.maven.plugins:maven-install-plugin:3.2.0
+[INFO] 
+[INFO] ---------------------< net.sf.marineapi:marineapi >---------------------
+[INFO] Building Java Marine API 0.12.0
+[INFO]   from pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ marineapi >>>
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-maven) @ marineapi ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ marineapi ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ marineapi ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ marineapi ---
+[INFO] Copying 10 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ marineapi ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ marineapi <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ marineapi ---
+INFO: No timeout specified. Using randomize.rounds: 3
+INFO: ROUNDS_CALCULATED: Giving net.sf.marineapi:marineapi:0.12.0 3 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 1084 tests. Time taken: 0.5119998455047607 seconds
+INFO: Using original order in path: /home/tanzim/flaky-study/marine-api/.dtfixingtools/original-order
+INFO: Using original order in path: /home/tanzim/flaky-study/marine-api/.dtfixingtools/original-order
+INFO: Using original order in path: /home/tanzim/flaky-study/marine-api/.dtfixingtools/original-order
+[INFO] Getting original results (1084 tests).
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 3 (0.0 seconds elapsed (4.4 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 3 (4.4 seconds elapsed (9.1 total), 2.2 seconds remaining).
+[INFO] Found 0 tests in round 3 of 3 (9.1 seconds elapsed (13.2 total), 0.0 seconds remaining).
+
+[INFO] Found 0 tests, writing list to /home/tanzim/flaky-study/marine-api/.dtfixingtools/detection-results/list.txt and dt lists to /home/tanzim/flaky-study/marine-api/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+COPY_FAILING_TEST_OUTPUT: /home/tanzim/flaky-study/marine-api/failing-test-output-1789734952512-933b1624-5189-43a7-989b-d66213c8b334
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  20.217 s
+[INFO] Finished at: 2026-09-18T19:00:46+06:00
+[INFO] ------------------------------------------------------------------------
+
+real	0m21.358s
+user	0m37.749s
+sys	0m3.269s

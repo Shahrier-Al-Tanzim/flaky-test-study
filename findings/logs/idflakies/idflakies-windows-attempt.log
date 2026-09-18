@@ -1,0 +1,47 @@
+﻿[INFO] Scanning for projects...
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/maven-metadata.xml (1.1 kB at 1.8 kB/s)
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: The plugin org.apache.maven.plugins:maven-resources-plugin:4.0.0-beta-1 requires Maven version 4.0.0-beta-3
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-resources-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-resources-plugin
+[INFO] Selected plugin org.apache.maven.plugins:maven-resources-plugin:3.5.0
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/maven-metadata.xml (2.6 kB at 19 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/maven-metadata.xml (1.0 kB at 6.8 kB/s)
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-3: The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-3 requires Maven version 4.0.0-rc-6
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-install-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-install-plugin
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-2: The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-2 requires Maven version 4.0.0-rc-2
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-1 requires Maven version 4.0.0-beta-3
+[INFO] Selected plugin org.apache.maven.plugins:maven-install-plugin:3.2.0
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.pom (3.0 kB at 34 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies/2.0.0/idflakies-2.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies/2.0.0/idflakies-2.0.0.pom (7.1 kB at 101 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.jar (35 kB at 174 kB/s)
+[INFO] 
+[INFO] ---------------------< net.sf.marineapi:marineapi >---------------------
+[INFO] Building Java Marine API 0.11.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ marineapi >>>
+[WARNING] 1 problem was encountered while building the effective model for net.sourceforge.cobertura:cobertura:jar:2.1.1 during dependency collection step for project (use -X to see details)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.175 s
+[INFO] Finished at: 2026-09-18T19:58:19+06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project marineapi: Could not resolve dependencies for project net.sf.marineapi:marineapi:bundle:0.11.0-SNAPSHOT
+[ERROR] dependency: com.sun:tools:jar:0 (system)
+[ERROR] 	Could not find artifact com.sun:tools:jar:0 at specified path C:\Users\Tanzim\.jdks\ms-21.0.7/../lib/tools.jar
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException

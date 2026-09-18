@@ -1,0 +1,102 @@
+[INFO] Scanning for projects...
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: 
+The plugin org.apache.maven.plugins:maven-resources-plugin:4.0.0-beta-1 has unmet prerequisites: 
+	Required Java version 17 is not met by current version: 1.8.0_502
+	Required Maven version 4.0.0-beta-3 is not met by current version 3.9.12
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-resources-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-resources-plugin
+[INFO] Selected plugin org.apache.maven.plugins:maven-resources-plugin:3.5.0
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-3: 
+The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-3 has unmet prerequisites: 
+	Required Java version 17 is not met by current version: 1.8.0_502
+	Required Maven version 4.0.0-rc-6 is not met by current version 3.9.12
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-install-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-install-plugin
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-2: 
+The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-2 has unmet prerequisites: 
+	Required Java version 17 is not met by current version: 1.8.0_502
+	Required Maven version 4.0.0-rc-2 is not met by current version 3.9.12
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: 
+The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-1 has unmet prerequisites: 
+	Required Java version 17 is not met by current version: 1.8.0_502
+	Required Maven version 4.0.0-beta-3 is not met by current version 3.9.12
+[INFO] Selected plugin org.apache.maven.plugins:maven-install-plugin:3.2.0
+[INFO] 
+[INFO] ---------------------< net.sf.marineapi:marineapi >---------------------
+[INFO] Building Java Marine API 0.11.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ marineapi >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M2:enforce (enforce-maven) @ marineapi ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ marineapi ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ marineapi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ marineapi ---
+[INFO] Copying 10 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.8.0:testCompile (default-testCompile) @ marineapi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ marineapi <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ marineapi ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving net.sf.marineapi:marineapi:0.11.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 926 tests. Time taken: 0.5690000057220459 seconds
+INFO: Using original order in path: /home/tanzim/flaky-study/marine-api-oldsha/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /home/tanzim/flaky-study/marine-api-oldsha/.dtfixingtools/original-order
+[INFO] Getting original results (926 tests).
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 5 (0.0 seconds elapsed (2.3 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 5 (2.3 seconds elapsed (4.6 total), 3.4 seconds remaining).
+Verified net.sf.marineapi.ais.parser.AISMessageFactoryTest.testCreateWithTwo, status: expected PASS, got PASS
+Verified net.sf.marineapi.ais.parser.AISMessageFactoryTest.testCreateWithTwo, status: expected ERROR, got ERROR
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testSequenceListenerWithIncorrectOrder, status: expected PASS, got PASS
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testSequenceListenerWithIncorrectOrder, status: expected ERROR, got ERROR
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testGenericsListenerDefaultConstructorThrows, status: expected PASS, got PASS
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testGenericsListenerDefaultConstructorThrows, status: expected ERROR, got ERROR
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testGenericsListener, status: expected PASS, got PASS
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testGenericsListener, status: expected ERROR, got ERROR
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testSequenceListenerWithMixedOrder, status: expected PASS, got PASS
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testSequenceListenerWithMixedOrder, status: expected ERROR, got ERROR
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testConstructor, status: expected PASS, got PASS
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testConstructor, status: expected ERROR, got ERROR
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testOnMessageWithExpectedMessage, status: expected PASS, got PASS
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testOnMessageWithExpectedMessage, status: expected ERROR, got ERROR
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testSequenceListener, status: expected PASS, got PASS
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testSequenceListener, status: expected ERROR, got ERROR
+Verified net.sf.marineapi.ais.parser.AISMessageFactoryTest.testCreate, status: expected PASS, got PASS
+Verified net.sf.marineapi.ais.parser.AISMessageFactoryTest.testCreate, status: expected ERROR, got ERROR
+Verified net.sf.marineapi.ais.parser.AISMessageFactoryTest.testCreateWithIncorrectOrder, status: expected PASS, got PASS
+Verified net.sf.marineapi.ais.parser.AISMessageFactoryTest.testCreateWithIncorrectOrder, status: expected ERROR, got ERROR
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testParametrizedConstructor, status: expected PASS, got PASS
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testParametrizedConstructor, status: expected ERROR, got ERROR
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testBasicListenerWithUnexpectedMessage, status: expected PASS, got PASS
+Verified net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.testBasicListenerWithUnexpectedMessage, status: expected ERROR, got ERROR
+[INFO] Found 12 tests in round 3 of 5 (4.6 seconds elapsed (42.0 total), 3.0 seconds remaining).
+[INFO] Found 0 tests in round 4 of 5 (0.0 seconds elapsed (44.3 total), 0.0 seconds remaining).
+Verified net.sf.marineapi.ais.parser.AISMessageFactoryTest.testCreate, status: expected PASS, got PASS
+Verified net.sf.marineapi.ais.parser.AISMessageFactoryTest.testCreate, status: expected ERROR, got ERROR
+[INFO] Found 0 tests in round 5 of 5 (2.2 seconds elapsed (50.3 total), 0.0 seconds remaining).
+
+[INFO] Found 12 tests, writing list to /home/tanzim/flaky-study/marine-api-oldsha/.dtfixingtools/detection-results/list.txt and dt lists to /home/tanzim/flaky-study/marine-api-oldsha/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  55.548 s
+[INFO] Finished at: 2026-09-18T19:28:13+06:00
+[INFO] ------------------------------------------------------------------------
+
+real	0m56.727s
+user	1m37.085s
+sys	0m10.199s
