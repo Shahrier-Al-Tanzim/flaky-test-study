@@ -38,6 +38,7 @@ surefire-reports/
 idflakies-output/
 idflakies-report/
 .nondex/
+.dtfixingtools/
 
 # ---------------------------------------------------------------
 # Exception: findings/ holds copies of logs + reports we DO want on
