@@ -97,3 +97,55 @@ run first — the existing `run1.log` execid was already saved with the
 broken backslash path and can't be debugged after the fact. Only worth
 trying if a future project actually has a real failing test to debug;
 not needed for `delight-nashorn-sandbox` (zero failures found).
+
+## 2026-09-18 — Second target: `marine-api` (Module 6, Step 21 — same-project comparison with iDFlakies)
+
+**Purpose:** NonDex had only ever been run on `delight-nashorn-sandbox`,
+never on the same project as an iDFlakies run — meaning no real
+same-project NonDex-vs-iDFlakies comparison existed. Ran it on
+`marine-api` (current commit, JDK 11) specifically to fill that gap.
+
+**Command:**
+```bash
+mvn -B edu.illinois:nondex-maven-plugin:2.2.1:nondex
+```
+
+**Result:** `BUILD SUCCESS`, all 3 shuffled runs clean —
+*"No Test Failed with this configuration"* each time. **Real time:
+34.6 seconds.** A second genuine null result: `marine-api` makes no
+unguaranteed-order (`ID`-category) assumptions, same as
+`delight-nashorn-sandbox`.
+
+## 2026-09-18 — Third target: `Java-WebSocket` (Module 6, Step 23)
+
+**Purpose:** compare NonDex against TSVD4J's own 18 conflicting-pair
+findings and IDoFT's documented labels, all on the same project/commit
+(`aad6654`, matching TSVD4J's exact commit).
+
+**Setup note:** this project needs JDK 8 (source level 1.7) — matches
+the Windows-side requirement already known from the TSVD4J study.
+
+**Command:**
+```bash
+mvn -B edu.illinois:nondex-maven-plugin:2.2.1:nondex
+```
+
+**Result:** `BUILD FAILURE` — NonDex couldn't even complete its own
+initial clean baseline run. `Issue825Test.testIssue` (15s timeout) and
+`Issue1142Test.testWithSSLSession` (4s timeout) failed before any
+shuffling happened. **This is not a NonDex bug or a real "no result" —
+it's the exact pre-existing environmental flakiness the plan's own Step 23
+note warns about** (port reuse, SSL/timing issues unrelated to test
+order). Also matches the Windows-side baseline run on this same commit
+([idflakies_findings.md](idflakies_findings.md) equivalent), which found
+4 failures + 2 timeouts in `Issue997Test`/`Issue825Test`/`Issue890Test` —
+overlapping but not identical sets, consistent with genuinely
+non-deterministic environmental flakiness rather than a fixed, reproducible
+bug.
+
+**Reportable finding:** NonDex requires a clean baseline to even start
+shuffling — on a project with real pre-existing environmental flakiness,
+this means NonDex **cannot produce any result at all**, clean or dirty.
+That's a real limitation worth noting: unlike iDFlakies (which has an
+explicit `all_must_pass=false` flag to tolerate this), NonDex has no
+equivalent escape hatch in this version.

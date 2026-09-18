@@ -1,0 +1,46 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------
+[INFO] Building Java-WebSocket 1.5.4-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ Java-WebSocket >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Java-WebSocket ---
+[INFO] skip non existing resourceDirectory /home/tanzim/flaky-study/Java-WebSocket/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ Java-WebSocket ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 78 source files to /home/tanzim/flaky-study/Java-WebSocket/target/classes
+[INFO] 
+[INFO] --- bnd:4.3.1:bnd-process (default) @ Java-WebSocket ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Java-WebSocket ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ Java-WebSocket ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ Java-WebSocket <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ Java-WebSocket ---
+INFO: No timeout specified. Using randomize.rounds: 3
+INFO: ROUNDS_CALCULATED: Giving org.java-websocket:Java-WebSocket:1.5.4-SNAPSHOT 3 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 531 tests. Time taken: 1.3890001773834229 seconds
+INFO: Using original order in path: /home/tanzim/flaky-study/Java-WebSocket/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /home/tanzim/flaky-study/Java-WebSocket/.dtfixingtools/original-order
+[INFO] Getting original results (531 tests).
+INFO: No passing order for tests (3 runs). Continuing anyway with last run.
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 7 tests in round 1 of 3 (0.0 seconds elapsed (75.6 total), 0.0 seconds remaining).
+Verified org.java_websocket.issues.Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckActive, status: expected PASS, got ERROR
+[INFO] Found 0 tests in round 2 of 3 (0.0 seconds elapsed (204.1 total), 0.0 seconds remaining).
+Verified org.java_websocket.issues.Issue1142Test.testWithSSLSession, status: expected ERROR, got PASS
+
+real	10m0.386s
+user	15m47.435s
+sys	0m26.755s

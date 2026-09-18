@@ -1,0 +1,27 @@
+=== apolloconfig/apollo @ 75f9950d5e1675dbb0617555c4502685ef4d4618 ===
+BUILD_EXIT_CODE: 124
+
+=== swagger-api/swagger-core @ 5186247f9c9703bd962f9df95289bb942a648398 ===
+BUILD_EXIT_CODE: 124
+
+=== alibaba/alibabacloud-tairjedis-sdk @ f6215930b9e21a5252c95296d9924b3c4524d9f6 ===
+BUILD_EXIT_CODE: 0
+
+=== apache/iotdb @ 25a98ee165131047cda93dc92203db2ab9aecbc8 ===
+CLONE_FAILED
+
+=== rest-assured/rest-assured @ bbede9fff77d4f1b751cdada0bdf8fe8d928919a ===
+BUILD_EXIT_CODE: 1
+
+=== winder/Universal-G-Code-Sender @ 4426f71c900ddd4a1eeb3957f3275cedc6312534 ===
+BUILD_EXIT_CODE: 124
+
+=== apache/ignite-3 @ a1aa7fd4e2398c72827777ec5417d67915ff4da3 ===
+BUILD_EXIT_CODE: 124
+
+=== abel533/Mapper @ 3c0b3307011fad53f811e08d05147d94fc6c0d67 ===
+BUILD_EXIT_CODE: 0
+
+=== apache/pulsar @ c4f125cfa292a8d61e0d037fa2d0fa1e89308b29 ===
+CLONE_FAILED
+

@@ -1,0 +1,1857 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------
+[INFO] Building Java-WebSocket 1.5.4-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ Java-WebSocket >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Java-WebSocket ---
+[INFO] skip non existing resourceDirectory /home/tanzim/flaky-study/Java-WebSocket/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ Java-WebSocket ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 78 source files to /home/tanzim/flaky-study/Java-WebSocket/target/classes
+[INFO] 
+[INFO] --- bnd:4.3.1:bnd-process (default) @ Java-WebSocket ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Java-WebSocket ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ Java-WebSocket ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ Java-WebSocket <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ Java-WebSocket ---
+INFO: The original argline is: 
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/tanzim/flaky-study/Java-WebSocket/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_d69Si+cd2lTocdhwAV1IRTtrCIcqFVAMPn+qVVAWOhs=
+nondexLogging=CONFIG
+test=
+[INFO] Surefire report directory: /home/tanzim/flaky-study/Java-WebSocket/.nondex/clean_d69Si+cd2lTocdhwAV1IRTtrCIcqFVAMPn+qVVAWOhs=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.java_websocket.autobahn.AutobahnServerResultsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.059 sec - in org.java_websocket.autobahn.AutobahnServerResultsTest
+Running org.java_websocket.framing.CloseFrameTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.framing.CloseFrameTest
+Running org.java_websocket.framing.BinaryFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.framing.BinaryFrameTest
+Running org.java_websocket.framing.PongFrameTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.framing.PongFrameTest
+Running org.java_websocket.framing.FramedataImpl1Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.framing.FramedataImpl1Test
+Running org.java_websocket.framing.ContinuousFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.framing.ContinuousFrameTest
+Running org.java_websocket.framing.TextFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.framing.TextFrameTest
+Running org.java_websocket.framing.PingFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.framing.PingFrameTest
+Running org.java_websocket.misc.OpeningHandshakeRejectionTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.java_websocket.misc.OpeningHandshakeRejectionTest
+Running org.java_websocket.drafts.Draft_6455Test
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.java_websocket.drafts.Draft_6455Test
+Running org.java_websocket.exceptions.WebsocketNotConnectedExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.exceptions.WebsocketNotConnectedExceptionTest
+Running org.java_websocket.exceptions.IncompleteExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.exceptions.IncompleteExceptionTest
+Running org.java_websocket.exceptions.InvalidDataExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.exceptions.InvalidDataExceptionTest
+Running org.java_websocket.exceptions.IncompleteHandshakeExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.IncompleteHandshakeExceptionTest
+Running org.java_websocket.exceptions.LimitExceededExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.LimitExceededExceptionTest
+Running org.java_websocket.exceptions.InvalidFrameExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.exceptions.InvalidFrameExceptionTest
+Running org.java_websocket.exceptions.InvalidEncodingExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.exceptions.InvalidEncodingExceptionTest
+Running org.java_websocket.exceptions.NotSendableExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.exceptions.NotSendableExceptionTest
+Running org.java_websocket.exceptions.InvalidHandshakeExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.InvalidHandshakeExceptionTest
+Running org.java_websocket.protocols.ProtocolHandshakeRejectionTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in org.java_websocket.protocols.ProtocolHandshakeRejectionTest
+Running org.java_websocket.protocols.ProtocolTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.protocols.ProtocolTest
+Running org.java_websocket.extensions.CompressionExtensionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.extensions.CompressionExtensionTest
+Running org.java_websocket.extensions.PerMessageDeflateExtensionTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.java_websocket.extensions.PerMessageDeflateExtensionTest
+Running org.java_websocket.extensions.DefaultExtensionTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.extensions.DefaultExtensionTest
+Running org.java_websocket.util.Base64Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.java_websocket.util.Base64Test
+Running org.java_websocket.util.CharsetfunctionsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.java_websocket.util.CharsetfunctionsTest
+Running org.java_websocket.util.ByteBufferUtilsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.util.ByteBufferUtilsTest
+Running org.java_websocket.issues.Issue855Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 sec - in org.java_websocket.issues.Issue855Test
+Running org.java_websocket.issues.Issue621Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.java_websocket.issues.Issue621Test
+Running org.java_websocket.issues.Issue1203Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 45.012 sec - in org.java_websocket.issues.Issue1203Test
+Running org.java_websocket.issues.Issue764Test
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.007 sec <<< FAILURE! - in org.java_websocket.issues.Issue764Test
+testIssue(org.java_websocket.issues.Issue764Test)  Time elapsed: 2.007 sec  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 2000 milliseconds
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:231)
+	at org.java_websocket.client.WebSocketClient.connectBlocking(WebSocketClient.java:387)
+	at org.java_websocket.client.WebSocketClient.reconnectBlocking(WebSocketClient.java:328)
+	at org.java_websocket.issues.Issue764Test.testIssue(Issue764Test.java:87)
+
+Running org.java_websocket.issues.Issue1160Test
+[WebSocketWorker-231] ERROR org.java_websocket.WebSocketImpl - Closing web socket due to an error during frame processing
+[WebSocketWorker-232] ERROR org.java_websocket.WebSocketImpl - Closing web socket due to an error during frame processing
+[WebSocketWorker-233] ERROR org.java_websocket.WebSocketImpl - Closing web socket due to an error during frame processing
+[WebSocketWorker-255] ERROR org.java_websocket.WebSocketImpl - Got fatal error during frame processing
+[WebSocketWorker-255] ERROR org.java_websocket.server.WebSocketServer - Got fatal error in worker thread WebSocketWorker-255
+[WebSocketWorker-255] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.lang.Exception: java.lang.OutOfMemoryError: Some error
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.run(WebSocketServer.java:1093)
+Caused by: java.lang.OutOfMemoryError: Some error
+	at org.java_websocket.issues.Issue1160Test$2.onMessage(Issue1160Test.java:124)
+	at org.java_websocket.server.WebSocketServer.onWebsocketMessage(WebSocketServer.java:718)
+	at org.java_websocket.drafts.Draft_6455.processFrameBinary(Draft_6455.java:959)
+	at org.java_websocket.drafts.Draft_6455.processFrame(Draft_6455.java:912)
+	at org.java_websocket.WebSocketImpl.decodeFrames(WebSocketImpl.java:401)
+	at org.java_websocket.WebSocketImpl.decode(WebSocketImpl.java:233)
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.doDecode(WebSocketServer.java:1114)
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.run(WebSocketServer.java:1086)
+[WebSocketWorker-255] ERROR org.java_websocket.server.WebSocketServer - Interrupt during stop
+java.lang.Exception: java.lang.OutOfMemoryError: Some error
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.run(WebSocketServer.java:1093)
+Caused by: java.lang.OutOfMemoryError: Some error
+	at org.java_websocket.issues.Issue1160Test$2.onMessage(Issue1160Test.java:124)
+	at org.java_websocket.server.WebSocketServer.onWebsocketMessage(WebSocketServer.java:718)
+	at org.java_websocket.drafts.Draft_6455.processFrameBinary(Draft_6455.java:959)
+	at org.java_websocket.drafts.Draft_6455.processFrame(Draft_6455.java:912)
+	at org.java_websocket.WebSocketImpl.decodeFrames(WebSocketImpl.java:401)
+	at org.java_websocket.WebSocketImpl.decode(WebSocketImpl.java:233)
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.doDecode(WebSocketServer.java:1114)
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.run(WebSocketServer.java:1086)
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec - in org.java_websocket.issues.Issue1160Test
+Running org.java_websocket.issues.Issue811Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.994 sec - in org.java_websocket.issues.Issue811Test
+Running org.java_websocket.issues.Issue941Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.006 sec - in org.java_websocket.issues.Issue941Test
+Running org.java_websocket.issues.Issue661Test
+[WebSocketSelector-334] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.141 sec - in org.java_websocket.issues.Issue661Test
+Running org.java_websocket.issues.Issue713Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.java_websocket.issues.Issue713Test
+Running org.java_websocket.issues.Issue997Test
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 3.196 sec <<< FAILURE! - in org.java_websocket.issues.Issue997Test
+test_localServer_ServerLocalhost_ClientLocalhost_CheckDefault(org.java_websocket.issues.Issue997Test)  Time elapsed: 1.008 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.java_websocket.issues.Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckDefault(Issue997Test.java:111)
+
+test_localServer_ServerLocalhost_ClientLocalhost_CheckInactive(org.java_websocket.issues.Issue997Test)  Time elapsed: 1.008 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.java_websocket.issues.Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckInactive(Issue997Test.java:102)
+
+test_localServer_ServerLocalhost_Client127_CheckInactive(org.java_websocket.issues.Issue997Test)  Time elapsed: 1.008 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.java_websocket.issues.Issue997Test.test_localServer_ServerLocalhost_Client127_CheckInactive(Issue997Test.java:74)
+
+Running org.java_websocket.issues.Issue677Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.java_websocket.issues.Issue677Test
+Running org.java_websocket.issues.Issue879Test
+[WebSocketSelector-623] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-2262] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-2815] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-3406] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-4082] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-4785] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-5531] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-6303] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-7138] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-8018] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-8901] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-9918] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-10993] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-11992] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-13002] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.01 sec - in org.java_websocket.issues.Issue879Test
+Running org.java_websocket.issues.Issue580Test
+[WebSocketSelector-14025] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.016 sec - in org.java_websocket.issues.Issue580Test
+Running org.java_websocket.issues.Issue732Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec - in org.java_websocket.issues.Issue732Test
+Running org.java_websocket.issues.Issue834Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.java_websocket.issues.Issue834Test
+Running org.java_websocket.issues.Issue666Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.java_websocket.issues.Issue666Test
+Running org.java_websocket.issues.Issue900Test
+[WebSocketSelector-14441] ERROR org.java_websocket.WebSocketImpl - Exception during channel.close()
+java.io.IOException
+	at org.java_websocket.issues.Issue900Test$ExceptionThrowingByteChannel.close(Issue900Test.java:151)
+	at org.java_websocket.WebSocketImpl.closeConnection(WebSocketImpl.java:550)
+	at org.java_websocket.WebSocketImpl.closeConnection(WebSocketImpl.java:585)
+	at org.java_websocket.server.WebSocketServer.handleIOException(WebSocketServer.java:670)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:412)
+	at java.lang.Thread.run(Thread.java:750)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.java_websocket.issues.Issue900Test
+Running org.java_websocket.issues.Issue765Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.issues.Issue765Test
+Running org.java_websocket.issues.Issue1142Test
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.01 sec <<< FAILURE! - in org.java_websocket.issues.Issue1142Test
+testWithSSLSession(org.java_websocket.issues.Issue1142Test)  Time elapsed: 4.002 sec  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 4000 milliseconds
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:231)
+	at org.java_websocket.client.WebSocketClient.connectBlocking(WebSocketClient.java:387)
+	at org.java_websocket.issues.Issue1142Test.testWithSSLSession(Issue1142Test.java:99)
+
+Running org.java_websocket.issues.Issue256Test
+
+WebSocketConnectReadThread-14647
+    at java.net.SocketInputStream.socketRead0(Native Method)
+    at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+    at java.net.SocketInputStream.read(SocketInputStream.java:171)
+    at java.net.SocketInputStream.read(SocketInputStream.java:141)
+    at java.net.SocketInputStream.read(SocketInputStream.java:127)
+    at org.java_websocket.client.WebSocketClient.run(WebSocketClient.java:515)
+    at java.lang.Thread.run(Thread.java:750)
+
+WebSocketWriteThread-14648
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+    at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+    at org.java_websocket.client.WebSocketClient$WebsocketWriteThread.runWriteData(WebSocketClient.java:816)
+    at org.java_websocket.client.WebSocketClient$WebsocketWriteThread.run(WebSocketClient.java:799)
+    at java.lang.Thread.run(Thread.java:750)
+
+connectionLostChecker-1
+    at sun.misc.Unsafe.park(Native Method)
+    at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+    at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+    at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+    at java.lang.Thread.run(Thread.java:750)
+Tests run: 20, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.417 sec <<< FAILURE! - in org.java_websocket.issues.Issue256Test
+runReconnectCloseBlocking[9](org.java_websocket.issues.Issue256Test)  Time elapsed: 6.012 sec  <<< FAILURE!
+java.lang.AssertionError: Found 3 zombie thread(s) 
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.java_websocket.util.ThreadCheck.checkZombies(ThreadCheck.java:74)
+	at org.java_websocket.util.ThreadCheck.after(ThreadCheck.java:53)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:50)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+Running org.java_websocket.issues.Issue825Test
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 14.994 sec <<< FAILURE! - in org.java_websocket.issues.Issue825Test
+testIssue(org.java_websocket.issues.Issue825Test)  Time elapsed: 14.993 sec  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 15000 milliseconds
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:231)
+	at org.java_websocket.client.WebSocketClient.connectBlocking(WebSocketClient.java:387)
+	at org.java_websocket.issues.Issue825Test.testIssue(Issue825Test.java:88)
+
+Running org.java_websocket.issues.Issue598Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.307 sec - in org.java_websocket.issues.Issue598Test
+Running org.java_websocket.issues.Issue962Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.java_websocket.issues.Issue962Test
+Running org.java_websocket.issues.Issue847Test
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.762 sec - in org.java_websocket.issues.Issue847Test
+Running org.java_websocket.issues.Issue609Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.java_websocket.issues.Issue609Test
+Running org.java_websocket.issues.Issue890Test
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.007 sec <<< FAILURE! - in org.java_websocket.issues.Issue890Test
+testWithSSLSession(org.java_websocket.issues.Issue890Test)  Time elapsed: 4.003 sec  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 4000 milliseconds
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:231)
+	at org.java_websocket.client.WebSocketClient.connectBlocking(WebSocketClient.java:387)
+	at org.java_websocket.issues.Issue890Test.testWithSSLSession(Issue890Test.java:90)
+
+Running org.java_websocket.server.WebSocketServerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.java_websocket.server.WebSocketServerTest
+Running org.java_websocket.server.DefaultWebSocketServerFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.server.DefaultWebSocketServerFactoryTest
+Running org.java_websocket.server.DefaultSSLWebSocketServerFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.java_websocket.server.DefaultSSLWebSocketServerFactoryTest
+Running org.java_websocket.server.CustomSSLWebSocketServerFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.java_websocket.server.CustomSSLWebSocketServerFactoryTest
+Running org.java_websocket.server.SSLParametersWebSocketServerFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.server.SSLParametersWebSocketServerFactoryTest
+Running org.java_websocket.client.SchemaCheckTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.client.SchemaCheckTest
+Running org.java_websocket.client.HeadersTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.client.HeadersTest
+Running org.java_websocket.client.AttachmentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.client.AttachmentTest
+
+Results :
+
+Failed tests: 
+  Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckDefault:111 null
+  Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckInactive:102 null
+  Issue997Test.test_localServer_ServerLocalhost_Client127_CheckInactive:74 null
+  Issue256Test.runReconnectCloseBlocking[9] Found 3 zombie thread(s) 
+
+Tests in error: 
+  Issue764Test.testIssue:87 » TestTimedOut test timed out after 2000 millisecond...
+  Issue1142Test.testWithSSLSession:99 » TestTimedOut test timed out after 4000 m...
+  Issue825Test.testIssue:88 » TestTimedOut test timed out after 15000 millisecon...
+  Issue890Test.testWithSSLSession:90 » TestTimedOut test timed out after 4000 mi...
+
+Tests run: 325, Failures: 4, Errors: 4, Skipped: 1
+
+INFO: Surefire failed when running tests for clean_d69Si+cd2lTocdhwAV1IRTtrCIcqFVAMPn+qVVAWOhs=
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/tanzim/flaky-study/Java-WebSocket/.nondex
+nondexJarDir=/home/tanzim/flaky-study/Java-WebSocket/.nondex
+nondexExecid=aQybEHIsMuMHwphVjlr9NqbxhPKGR3EziZa4X2usTYA=
+nondexLogging=CONFIG
+test=
+[INFO] Surefire report directory: /home/tanzim/flaky-study/Java-WebSocket/.nondex/aQybEHIsMuMHwphVjlr9NqbxhPKGR3EziZa4X2usTYA=
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.17/surefire-junit47-2.17.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.17/surefire-junit47-2.17.pom (4.2 kB at 7.3 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.17/common-junit48-2.17.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.17/common-junit48-2.17.pom (3.4 kB at 8.0 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.17/common-junit4-2.17.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.17/common-junit4-2.17.pom (2.0 kB at 9.9 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.17/common-junit3-2.17.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.17/common-junit3-2.17.pom (1.6 kB at 6.8 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.17/common-java5-2.17.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.17/common-java5-2.17.pom (1.7 kB at 6.5 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom (4.0 kB at 19 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.17/surefire-grouper-2.17.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.17/surefire-grouper-2.17.pom (2.5 kB at 8.3 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.17/common-junit4-2.17.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.17/common-java5-2.17.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.17/common-junit3-2.17.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.17/common-junit48-2.17.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.17/surefire-junit47-2.17.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.17/common-junit4-2.17.jar (16 kB at 63 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.17/surefire-junit47-2.17.jar (119 kB at 282 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.17/surefire-grouper-2.17.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.17/common-java5-2.17.jar (37 kB at 72 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.17/common-junit48-2.17.jar (18 kB at 33 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar (155 kB at 529 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.17/common-junit3-2.17.jar (11 kB at 19 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.17/surefire-grouper-2.17.jar (38 kB at 150 kB/s)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: -1,258,398.573 sec - in org.java_websocket.autobahn.AutobahnServerResultsTest
+Running org.java_websocket.framing.CloseFrameTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.java_websocket.framing.CloseFrameTest
+Running org.java_websocket.framing.BinaryFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.framing.BinaryFrameTest
+Running org.java_websocket.framing.PongFrameTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.framing.PongFrameTest
+Running org.java_websocket.framing.FramedataImpl1Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.framing.FramedataImpl1Test
+Running org.java_websocket.framing.ContinuousFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.framing.ContinuousFrameTest
+Running org.java_websocket.framing.TextFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.framing.TextFrameTest
+Running org.java_websocket.framing.PingFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.java_websocket.framing.PingFrameTest
+Running org.java_websocket.misc.OpeningHandshakeRejectionTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.java_websocket.misc.OpeningHandshakeRejectionTest
+Running org.java_websocket.drafts.Draft_6455Test
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec - in org.java_websocket.drafts.Draft_6455Test
+Running org.java_websocket.exceptions.WebsocketNotConnectedExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.WebsocketNotConnectedExceptionTest
+Running org.java_websocket.exceptions.IncompleteExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.IncompleteExceptionTest
+Running org.java_websocket.exceptions.InvalidDataExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.InvalidDataExceptionTest
+Running org.java_websocket.exceptions.IncompleteHandshakeExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.IncompleteHandshakeExceptionTest
+Running org.java_websocket.exceptions.LimitExceededExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.LimitExceededExceptionTest
+Running org.java_websocket.exceptions.InvalidFrameExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.InvalidFrameExceptionTest
+Running org.java_websocket.exceptions.InvalidEncodingExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.exceptions.InvalidEncodingExceptionTest
+Running org.java_websocket.exceptions.NotSendableExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.exceptions.NotSendableExceptionTest
+Running org.java_websocket.exceptions.InvalidHandshakeExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.InvalidHandshakeExceptionTest
+Running org.java_websocket.protocols.ProtocolHandshakeRejectionTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in org.java_websocket.protocols.ProtocolHandshakeRejectionTest
+Running org.java_websocket.protocols.ProtocolTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.protocols.ProtocolTest
+Running org.java_websocket.extensions.CompressionExtensionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.extensions.CompressionExtensionTest
+Running org.java_websocket.extensions.PerMessageDeflateExtensionTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.java_websocket.extensions.PerMessageDeflateExtensionTest
+Running org.java_websocket.extensions.DefaultExtensionTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.java_websocket.extensions.DefaultExtensionTest
+Running org.java_websocket.util.Base64Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.util.Base64Test
+Running org.java_websocket.util.CharsetfunctionsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.util.CharsetfunctionsTest
+Running org.java_websocket.util.ByteBufferUtilsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.util.ByteBufferUtilsTest
+Running org.java_websocket.issues.Issue855Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec - in org.java_websocket.issues.Issue855Test
+Running org.java_websocket.issues.Issue621Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in org.java_websocket.issues.Issue621Test
+Running org.java_websocket.issues.Issue1203Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 45.031 sec - in org.java_websocket.issues.Issue1203Test
+Running org.java_websocket.issues.Issue764Test
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.007 sec <<< FAILURE! - in org.java_websocket.issues.Issue764Test
+testIssue(org.java_websocket.issues.Issue764Test)  Time elapsed: 2.006 sec  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 2000 milliseconds
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:231)
+	at org.java_websocket.client.WebSocketClient.connectBlocking(WebSocketClient.java:387)
+	at org.java_websocket.client.WebSocketClient.reconnectBlocking(WebSocketClient.java:328)
+	at org.java_websocket.issues.Issue764Test.testIssue(Issue764Test.java:87)
+
+Running org.java_websocket.issues.Issue1160Test
+[WebSocketWorker-232] ERROR org.java_websocket.WebSocketImpl - Closing web socket due to an error during frame processing
+[WebSocketWorker-233] ERROR org.java_websocket.WebSocketImpl - Closing web socket due to an error during frame processing
+[WebSocketWorker-234] ERROR org.java_websocket.WebSocketImpl - Closing web socket due to an error during frame processing
+[WebSocketWorker-256] ERROR org.java_websocket.WebSocketImpl - Got fatal error during frame processing
+[WebSocketWorker-256] ERROR org.java_websocket.server.WebSocketServer - Got fatal error in worker thread WebSocketWorker-256
+[WebSocketWorker-256] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.lang.Exception: java.lang.OutOfMemoryError: Some error
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.run(WebSocketServer.java:1093)
+Caused by: java.lang.OutOfMemoryError: Some error
+	at org.java_websocket.issues.Issue1160Test$2.onMessage(Issue1160Test.java:124)
+	at org.java_websocket.server.WebSocketServer.onWebsocketMessage(WebSocketServer.java:718)
+	at org.java_websocket.drafts.Draft_6455.processFrameBinary(Draft_6455.java:959)
+	at org.java_websocket.drafts.Draft_6455.processFrame(Draft_6455.java:912)
+	at org.java_websocket.WebSocketImpl.decodeFrames(WebSocketImpl.java:401)
+	at org.java_websocket.WebSocketImpl.decode(WebSocketImpl.java:233)
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.doDecode(WebSocketServer.java:1114)
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.run(WebSocketServer.java:1086)
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec - in org.java_websocket.issues.Issue1160Test
+Running org.java_websocket.issues.Issue811Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.003 sec - in org.java_websocket.issues.Issue811Test
+Running org.java_websocket.issues.Issue941Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.007 sec - in org.java_websocket.issues.Issue941Test
+Running org.java_websocket.issues.Issue661Test
+[WebSocketSelector-335] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.176 sec - in org.java_websocket.issues.Issue661Test
+Running org.java_websocket.issues.Issue713Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.java_websocket.issues.Issue713Test
+Running org.java_websocket.issues.Issue997Test
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 3.185 sec <<< FAILURE! - in org.java_websocket.issues.Issue997Test
+test_localServer_ServerLocalhost_ClientLocalhost_CheckDefault(org.java_websocket.issues.Issue997Test)  Time elapsed: 1.005 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.java_websocket.issues.Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckDefault(Issue997Test.java:111)
+
+test_localServer_ServerLocalhost_Client127_CheckInactive(org.java_websocket.issues.Issue997Test)  Time elapsed: 1.008 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.java_websocket.issues.Issue997Test.test_localServer_ServerLocalhost_Client127_CheckInactive(Issue997Test.java:74)
+
+test_localServer_ServerLocalhost_ClientLocalhost_CheckActive(org.java_websocket.issues.Issue997Test)  Time elapsed: 1.008 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.java_websocket.issues.Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckActive(Issue997Test.java:93)
+
+Running org.java_websocket.issues.Issue677Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.java_websocket.issues.Issue677Test
+Running org.java_websocket.issues.Issue879Test
+[WebSocketSelector-1057] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-1789] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-2261] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-2795] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-3355] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-3953] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-4597] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-5281] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-6001] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-6756] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-7548] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-8387] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-9263] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-10179] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-11154] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-12141] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-13166] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in useTests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.016 sec - in org.java_websocket.issues.Issue879Test
+
+Running org.java_websocket.issues.Issue580Test
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.012 sec - in org.java_websocket.issues.Issue580Test
+Running org.java_websocket.issues.Issue732Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 sec - in org.java_websocket.issues.Issue732Test
+Running org.java_websocket.issues.Issue834Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.java_websocket.issues.Issue834Test
+Running org.java_websocket.issues.Issue666Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.java_websocket.issues.Issue666Test
+Running org.java_websocket.issues.Issue900Test
+[WebSocketSelector-13582] ERROR org.java_websocket.WebSocketImpl - Exception during channel.close()
+java.io.IOException
+	at org.java_websocket.issues.Issue900Test$ExceptionThrowingByteChannel.close(Issue900Test.java:151)
+	at org.java_websocket.WebSocketImpl.closeConnection(WebSocketImpl.java:550)
+	at org.java_websocket.WebSocketImpl.closeConnection(WebSocketImpl.java:585)
+	at org.java_websocket.server.WebSocketServer.handleIOException(WebSocketServer.java:670)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:412)
+	at java.lang.Thread.run(Thread.java:750)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec - in org.java_websocket.issues.Issue900Test
+Running org.java_websocket.issues.Issue765Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.issues.Issue765Test
+Running org.java_websocket.issues.Issue1142Test
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.008 sec <<< FAILURE! - in org.java_websocket.issues.Issue1142Test
+testWithSSLSession(org.java_websocket.issues.Issue1142Test)  Time elapsed: 4.003 sec  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 4000 milliseconds
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:231)
+	at org.java_websocket.client.WebSocketClient.connectBlocking(WebSocketClient.java:387)
+	at org.java_websocket.issues.Issue1142Test.testWithSSLSession(Issue1142Test.java:99)
+
+Running org.java_websocket.issues.Issue256Test
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.367 sec - in org.java_websocket.issues.Issue256Test
+Running org.java_websocket.issues.Issue825Test
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 15.001 sec <<< FAILURE! - in org.java_websocket.issues.Issue825Test
+testIssue(org.java_websocket.issues.Issue825Test)  Time elapsed: 15 sec  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 15000 milliseconds
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:231)
+	at org.java_websocket.client.WebSocketClient.connectBlocking(WebSocketClient.java:387)
+	at org.java_websocket.client.WebSocketClient.reconnectBlocking(WebSocketClient.java:328)
+	at org.java_websocket.issues.Issue825Test.testIssue(Issue825Test.java:94)
+
+Running org.java_websocket.issues.Issue598Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.4 sec - in org.java_websocket.issues.Issue598Test
+Running org.java_websocket.issues.Issue962Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.java_websocket.issues.Issue962Test
+Running org.java_websocket.issues.Issue847Test
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.81 sec - in org.java_websocket.issues.Issue847Test
+Running org.java_websocket.issues.Issue609Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec - in org.java_websocket.issues.Issue609Test
+Running org.java_websocket.issues.Issue890Test
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.008 sec <<< FAILURE! - in org.java_websocket.issues.Issue890Test
+testWithSSLSession(org.java_websocket.issues.Issue890Test)  Time elapsed: 4.002 sec  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 4000 milliseconds
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:231)
+	at org.java_websocket.client.WebSocketClient.connectBlocking(WebSocketClient.java:387)
+	at org.java_websocket.issues.Issue890Test.testWithSSLSession(Issue890Test.java:90)
+
+Running org.java_websocket.server.WebSocketServerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.server.WebSocketServerTest
+Running org.java_websocket.server.DefaultWebSocketServerFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.server.DefaultWebSocketServerFactoryTest
+Running org.java_websocket.server.DefaultSSLWebSocketServerFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in org.java_websocket.server.DefaultSSLWebSocketServerFactoryTest
+Running org.java_websocket.server.CustomSSLWebSocketServerFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.java_websocket.server.CustomSSLWebSocketServerFactoryTest
+Running org.java_websocket.server.SSLParametersWebSocketServerFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.java_websocket.server.SSLParametersWebSocketServerFactoryTest
+Running org.java_websocket.client.SchemaCheckTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.client.SchemaCheckTest
+Running org.java_websocket.client.HeadersTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.client.HeadersTest
+Running org.java_websocket.client.AttachmentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.client.AttachmentTest
+
+Results :
+
+Failed tests: 
+  Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckDefault:111 null
+  Issue997Test.test_localServer_ServerLocalhost_Client127_CheckInactive:74 null
+  Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckActive:93 null
+
+Tests in error: 
+  Issue764Test.testIssue:87 » TestTimedOut test timed out after 2000 millisecond...
+  Issue1142Test.testWithSSLSession:99 » TestTimedOut test timed out after 4000 m...
+  Issue825Test.testIssue:94 » TestTimedOut test timed out after 15000 millisecon...
+  Issue890Test.testWithSSLSession:90 » TestTimedOut test timed out after 4000 mi...
+
+Tests run: 325, Failures: 3, Errors: 4, Skipped: 1
+
+INFO: Surefire failed when running tests for aQybEHIsMuMHwphVjlr9NqbxhPKGR3EziZa4X2usTYA=
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/tanzim/flaky-study/Java-WebSocket/.nondex
+nondexJarDir=/home/tanzim/flaky-study/Java-WebSocket/.nondex
+nondexExecid=elbXXdqovLSi8OLfnooeW2cso1SkWz7A2+Lwk0zkoUY=
+nondexLogging=CONFIG
+test=
+[INFO] Surefire report directory: /home/tanzim/flaky-study/Java-WebSocket/.nondex/elbXXdqovLSi8OLfnooeW2cso1SkWz7A2+Lwk0zkoUY=
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: -1,258,304.976 sec - in org.java_websocket.autobahn.AutobahnServerResultsTest
+Running org.java_websocket.framing.CloseFrameTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.java_websocket.framing.CloseFrameTest
+Running org.java_websocket.framing.BinaryFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.framing.BinaryFrameTest
+Running org.java_websocket.framing.PongFrameTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.framing.PongFrameTest
+Running org.java_websocket.framing.FramedataImpl1Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.java_websocket.framing.FramedataImpl1Test
+Running org.java_websocket.framing.ContinuousFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.framing.ContinuousFrameTest
+Running org.java_websocket.framing.TextFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.framing.TextFrameTest
+Running org.java_websocket.framing.PingFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.java_websocket.framing.PingFrameTest
+Running org.java_websocket.misc.OpeningHandshakeRejectionTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 sec - in org.java_websocket.misc.OpeningHandshakeRejectionTest
+Running org.java_websocket.drafts.Draft_6455Test
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec - in org.java_websocket.drafts.Draft_6455Test
+Running org.java_websocket.exceptions.WebsocketNotConnectedExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.WebsocketNotConnectedExceptionTest
+Running org.java_websocket.exceptions.IncompleteExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.IncompleteExceptionTest
+Running org.java_websocket.exceptions.InvalidDataExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.InvalidDataExceptionTest
+Running org.java_websocket.exceptions.IncompleteHandshakeExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.IncompleteHandshakeExceptionTest
+Running org.java_websocket.exceptions.LimitExceededExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.LimitExceededExceptionTest
+Running org.java_websocket.exceptions.InvalidFrameExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.InvalidFrameExceptionTest
+Running org.java_websocket.exceptions.InvalidEncodingExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.InvalidEncodingExceptionTest
+Running org.java_websocket.exceptions.NotSendableExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.exceptions.NotSendableExceptionTest
+Running org.java_websocket.exceptions.InvalidHandshakeExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.exceptions.InvalidHandshakeExceptionTest
+Running org.java_websocket.protocols.ProtocolHandshakeRejectionTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec - in org.java_websocket.protocols.ProtocolHandshakeRejectionTest
+Running org.java_websocket.protocols.ProtocolTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.protocols.ProtocolTest
+Running org.java_websocket.extensions.CompressionExtensionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.extensions.CompressionExtensionTest
+Running org.java_websocket.extensions.PerMessageDeflateExtensionTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.java_websocket.extensions.PerMessageDeflateExtensionTest
+Running org.java_websocket.extensions.DefaultExtensionTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec - in org.java_websocket.extensions.DefaultExtensionTest
+Running org.java_websocket.util.Base64Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.java_websocket.util.Base64Test
+Running org.java_websocket.util.CharsetfunctionsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.util.CharsetfunctionsTest
+Running org.java_websocket.util.ByteBufferUtilsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.util.ByteBufferUtilsTest
+Running org.java_websocket.issues.Issue855Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec - in org.java_websocket.issues.Issue855Test
+Running org.java_websocket.issues.Issue621Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.java_websocket.issues.Issue621Test
+Running org.java_websocket.issues.Issue1203Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 45.011 sec - in org.java_websocket.issues.Issue1203Test
+Running org.java_websocket.issues.Issue764Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.643 sec - in org.java_websocket.issues.Issue764Test
+Running org.java_websocket.issues.Issue1160Test
+[WebSocketWorker-233] ERROR org.java_websocket.WebSocketImpl - Closing web socket due to an error during frame processing
+[WebSocketWorker-234] ERROR org.java_websocket.WebSocketImpl - Closing web socket due to an error during frame processing
+[WebSocketWorker-235] ERROR org.java_websocket.WebSocketImpl - Closing web socket due to an error during frame processing
+[WebSocketWorker-257] ERROR org.java_websocket.WebSocketImpl - Got fatal error during frame processing
+[WebSocketWorker-257] ERROR org.java_websocket.server.WebSocketServer - Got fatal error in worker thread WebSocketWorker-257
+[WebSocketWorker-257] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.lang.Exception: java.lang.OutOfMemoryError: Some error
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.run(WebSocketServer.java:1093)
+Caused by: java.lang.OutOfMemoryError: Some error
+	at org.java_websocket.issues.Issue1160Test$2.onMessage(Issue1160Test.java:124)
+	at org.java_websocket.server.WebSocketServer.onWebsocketMessage(WebSocketServer.java:718)
+	at org.java_websocket.drafts.Draft_6455.processFrameBinary(Draft_6455.java:959)
+	at org.java_websocket.drafts.Draft_6455.processFrame(Draft_6455.java:912)
+	at org.java_websocket.WebSocketImpl.decodeFrames(WebSocketImpl.java:401)
+	at org.java_websocket.WebSocketImpl.decode(WebSocketImpl.java:233)
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.doDecode(WebSocketServer.java:1114)
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.run(WebSocketServer.java:1086)
+[WebSocketWorker-257] ERROR org.java_websocket.server.WebSocketServer - Interrupt during stop
+java.lang.Exception: java.lang.OutOfMemoryError: Some error
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.run(WebSocketServer.java:1093)
+Caused by: java.lang.OutOfMemoryError: Some error
+	at org.java_websocket.issues.Issue1160Test$2.onMessage(Issue1160Test.java:124)
+	at org.java_websocket.server.WebSocketServer.onWebsocketMessage(WebSocketServer.java:718)
+	at org.java_websocket.drafts.Draft_6455.processFrameBinary(Draft_6455.java:959)
+	at org.java_websocket.drafts.Draft_6455.processFrame(Draft_6455.java:912)
+	at org.java_websocket.WebSocketImpl.decodeFrames(WebSocketImpl.java:401)
+	at org.java_websocket.WebSocketImpl.decode(WebSocketImpl.java:233)
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.doDecode(WebSocketServer.java:1114)
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.run(WebSocketServer.java:1086)
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec - in org.java_websocket.issues.Issue1160Test
+Running org.java_websocket.issues.Issue811Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.989 sec - in org.java_websocket.issues.Issue811Test
+Running org.java_websocket.issues.Issue941Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.008 sec - in org.java_websocket.issues.Issue941Test
+Running org.java_websocket.issues.Issue661Test
+[WebSocketSelector-336] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.152 sec - in org.java_websocket.issues.Issue661Test
+Running org.java_websocket.issues.Issue713Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.java_websocket.issues.Issue713Test
+Running org.java_websocket.issues.Issue997Test
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 3.209 sec <<< FAILURE! - in org.java_websocket.issues.Issue997Test
+test_localServer_ServerLocalhost_ClientLocalhost_CheckDefault(org.java_websocket.issues.Issue997Test)  Time elapsed: 1.012 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.java_websocket.issues.Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckDefault(Issue997Test.java:111)
+
+test_localServer_ServerLocalhost_Client127_CheckInactive(org.java_websocket.issues.Issue997Test)  Time elapsed: 1.012 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.java_websocket.issues.Issue997Test.test_localServer_ServerLocalhost_Client127_CheckInactive(Issue997Test.java:74)
+
+test_localServer_ServerLocalhost_ClientLocalhost_CheckActive(org.java_websocket.issues.Issue997Test)  Time elapsed: 1.009 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.java_websocket.issues.Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckActive(Issue997Test.java:93)
+
+Running org.java_websocket.issues.Issue677Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in org.java_websocket.issues.Issue677Test
+Running org.java_websocket.issues.Issue879Test
+[WebSocketSelector-1058] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-1386] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-1789] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-2800] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-3372] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-3971] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-4633] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-5320] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-6043] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-6789] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-7656] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-8484] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-9431] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-10369] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-11494] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-12668] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-13709] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.381 sec - in org.java_websocket.issues.Issue879Test
+
+Running org.java_websocket.issues.Issue580Test
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.011 sec - in org.java_websocket.issues.Issue580Test
+Running org.java_websocket.issues.Issue732Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec - in org.java_websocket.issues.Issue732Test
+Running org.java_websocket.issues.Issue834Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in org.java_websocket.issues.Issue834Test
+Running org.java_websocket.issues.Issue666Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in org.java_websocket.issues.Issue666Test
+Running org.java_websocket.issues.Issue900Test
+[WebSocketSelector-14125] ERROR org.java_websocket.WebSocketImpl - Exception during channel.close()
+java.io.IOException
+	at org.java_websocket.issues.Issue900Test$ExceptionThrowingByteChannel.close(Issue900Test.java:151)
+	at org.java_websocket.WebSocketImpl.closeConnection(WebSocketImpl.java:550)
+	at org.java_websocket.WebSocketImpl.closeConnection(WebSocketImpl.java:585)
+	at org.java_websocket.server.WebSocketServer.handleIOException(WebSocketServer.java:670)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:412)
+	at java.lang.Thread.run(Thread.java:750)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec - in org.java_websocket.issues.Issue900Test
+Running org.java_websocket.issues.Issue765Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.issues.Issue765Test
+Running org.java_websocket.issues.Issue1142Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec - in org.java_websocket.issues.Issue1142Test
+Running org.java_websocket.issues.Issue256Test
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.385 sec - in org.java_websocket.issues.Issue256Test
+Running org.java_websocket.issues.Issue825Test
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 15.004 sec <<< FAILURE! - in org.java_websocket.issues.Issue825Test
+testIssue(org.java_websocket.issues.Issue825Test)  Time elapsed: 15.003 sec  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 15000 milliseconds
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:231)
+	at org.java_websocket.client.WebSocketClient.connectBlocking(WebSocketClient.java:387)
+	at org.java_websocket.issues.Issue825Test.testIssue(Issue825Test.java:88)
+
+Running org.java_websocket.issues.Issue598Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.307 sec - in org.java_websocket.issues.Issue598Test
+Running org.java_websocket.issues.Issue962Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.java_websocket.issues.Issue962Test
+Running org.java_websocket.issues.Issue847Test
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.749 sec - in org.java_websocket.issues.Issue847Test
+Running org.java_websocket.issues.Issue609Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.java_websocket.issues.Issue609Test
+Running org.java_websocket.issues.Issue890Test
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.007 sec <<< FAILURE! - in org.java_websocket.issues.Issue890Test
+testWithSSLSession(org.java_websocket.issues.Issue890Test)  Time elapsed: 4.003 sec  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 4000 milliseconds
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:231)
+	at org.java_websocket.client.WebSocketClient.connectBlocking(WebSocketClient.java:387)
+	at org.java_websocket.issues.Issue890Test.testWithSSLSession(Issue890Test.java:90)
+
+Running org.java_websocket.server.WebSocketServerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.java_websocket.server.WebSocketServerTest
+Running org.java_websocket.server.DefaultWebSocketServerFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.server.DefaultWebSocketServerFactoryTest
+Running org.java_websocket.server.DefaultSSLWebSocketServerFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.java_websocket.server.DefaultSSLWebSocketServerFactoryTest
+Running org.java_websocket.server.CustomSSLWebSocketServerFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.server.CustomSSLWebSocketServerFactoryTest
+Running org.java_websocket.server.SSLParametersWebSocketServerFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.server.SSLParametersWebSocketServerFactoryTest
+Running org.java_websocket.client.SchemaCheckTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.client.SchemaCheckTest
+Running org.java_websocket.client.HeadersTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.client.HeadersTest
+Running org.java_websocket.client.AttachmentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.client.AttachmentTest
+
+Results :
+
+Failed tests: 
+  Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckDefault:111 null
+  Issue997Test.test_localServer_ServerLocalhost_Client127_CheckInactive:74 null
+  Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckActive:93 null
+
+Tests in error: 
+  Issue825Test.testIssue:88 » TestTimedOut test timed out after 15000 millisecon...
+  Issue890Test.testWithSSLSession:90 » TestTimedOut test timed out after 4000 mi...
+
+Tests run: 325, Failures: 3, Errors: 2, Skipped: 1
+
+INFO: Surefire failed when running tests for elbXXdqovLSi8OLfnooeW2cso1SkWz7A2+Lwk0zkoUY=
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/tanzim/flaky-study/Java-WebSocket/.nondex
+nondexJarDir=/home/tanzim/flaky-study/Java-WebSocket/.nondex
+nondexExecid=XQfl8Pe2ovgszaIREX0F+f36ua3Ch5DaNJGjigg1VuA=
+nondexLogging=CONFIG
+test=
+[INFO] Surefire report directory: /home/tanzim/flaky-study/Java-WebSocket/.nondex/XQfl8Pe2ovgszaIREX0F+f36ua3Ch5DaNJGjigg1VuA=
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: -1,258,214.448 sec - in org.java_websocket.autobahn.AutobahnServerResultsTest
+Running org.java_websocket.framing.CloseFrameTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.java_websocket.framing.CloseFrameTest
+Running org.java_websocket.framing.BinaryFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.framing.BinaryFrameTest
+Running org.java_websocket.framing.PongFrameTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.framing.PongFrameTest
+Running org.java_websocket.framing.FramedataImpl1Test
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.framing.FramedataImpl1Test
+Running org.java_websocket.framing.ContinuousFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.framing.ContinuousFrameTest
+Running org.java_websocket.framing.TextFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.framing.TextFrameTest
+Running org.java_websocket.framing.PingFrameTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.java_websocket.framing.PingFrameTest
+Running org.java_websocket.misc.OpeningHandshakeRejectionTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec - in org.java_websocket.misc.OpeningHandshakeRejectionTest
+Running org.java_websocket.drafts.Draft_6455Test
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.java_websocket.drafts.Draft_6455Test
+Running org.java_websocket.exceptions.WebsocketNotConnectedExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.WebsocketNotConnectedExceptionTest
+Running org.java_websocket.exceptions.IncompleteExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.IncompleteExceptionTest
+Running org.java_websocket.exceptions.InvalidDataExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.InvalidDataExceptionTest
+Running org.java_websocket.exceptions.IncompleteHandshakeExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.IncompleteHandshakeExceptionTest
+Running org.java_websocket.exceptions.LimitExceededExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.exceptions.LimitExceededExceptionTest
+Running org.java_websocket.exceptions.InvalidFrameExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.InvalidFrameExceptionTest
+Running org.java_websocket.exceptions.InvalidEncodingExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.InvalidEncodingExceptionTest
+Running org.java_websocket.exceptions.NotSendableExceptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.NotSendableExceptionTest
+Running org.java_websocket.exceptions.InvalidHandshakeExceptionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.exceptions.InvalidHandshakeExceptionTest
+Running org.java_websocket.protocols.ProtocolHandshakeRejectionTest
+Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec - in org.java_websocket.protocols.ProtocolHandshakeRejectionTest
+Running org.java_websocket.protocols.ProtocolTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.protocols.ProtocolTest
+Running org.java_websocket.extensions.CompressionExtensionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.extensions.CompressionExtensionTest
+Running org.java_websocket.extensions.PerMessageDeflateExtensionTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec - in org.java_websocket.extensions.PerMessageDeflateExtensionTest
+Running org.java_websocket.extensions.DefaultExtensionTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.java_websocket.extensions.DefaultExtensionTest
+Running org.java_websocket.util.Base64Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in org.java_websocket.util.Base64Test
+Running org.java_websocket.util.CharsetfunctionsTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.util.CharsetfunctionsTest
+Running org.java_websocket.util.ByteBufferUtilsTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.util.ByteBufferUtilsTest
+Running org.java_websocket.issues.Issue855Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec - in org.java_websocket.issues.Issue855Test
+Running org.java_websocket.issues.Issue621Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in org.java_websocket.issues.Issue621Test
+Running org.java_websocket.issues.Issue1203Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 45.009 sec - in org.java_websocket.issues.Issue1203Test
+Running org.java_websocket.issues.Issue764Test
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.005 sec <<< FAILURE! - in org.java_websocket.issues.Issue764Test
+testIssue(org.java_websocket.issues.Issue764Test)  Time elapsed: 2.005 sec  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 2000 milliseconds
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:231)
+	at org.java_websocket.client.WebSocketClient.connectBlocking(WebSocketClient.java:387)
+	at org.java_websocket.client.WebSocketClient.reconnectBlocking(WebSocketClient.java:328)
+	at org.java_websocket.issues.Issue764Test.testIssue(Issue764Test.java:87)
+
+Running org.java_websocket.issues.Issue1160Test
+[WebSocketWorker-232] ERROR org.java_websocket.WebSocketImpl - Closing web socket due to an error during frame processing
+[WebSocketWorker-233] ERROR org.java_websocket.WebSocketImpl - Closing web socket due to an error during frame processing
+[WebSocketWorker-234] ERROR org.java_websocket.WebSocketImpl - Closing web socket due to an error during frame processing
+[WebSocketWorker-256] ERROR org.java_websocket.WebSocketImpl - Got fatal error during frame processing
+[WebSocketWorker-256] ERROR org.java_websocket.server.WebSocketServer - Got fatal error in worker thread WebSocketWorker-256
+[WebSocketWorker-256] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.lang.Exception: java.lang.OutOfMemoryError: Some error
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.run(WebSocketServer.java:1093)
+Caused by: java.lang.OutOfMemoryError: Some error
+	at org.java_websocket.issues.Issue1160Test$2.onMessage(Issue1160Test.java:124)
+	at org.java_websocket.server.WebSocketServer.onWebsocketMessage(WebSocketServer.java:718)
+	at org.java_websocket.drafts.Draft_6455.processFrameBinary(Draft_6455.java:959)
+	at org.java_websocket.drafts.Draft_6455.processFrame(Draft_6455.java:912)
+	at org.java_websocket.WebSocketImpl.decodeFrames(WebSocketImpl.java:401)
+	at org.java_websocket.WebSocketImpl.decode(WebSocketImpl.java:233)
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.doDecode(WebSocketServer.java:1114)
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.run(WebSocketServer.java:1086)
+[WebSocketWorker-256] ERROR org.java_websocket.server.WebSocketServer - Interrupt during stop
+java.lang.Exception: java.lang.OutOfMemoryError: Some error
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.run(WebSocketServer.java:1093)
+Caused by: java.lang.OutOfMemoryError: Some error
+	at org.java_websocket.issues.Issue1160Test$2.onMessage(Issue1160Test.java:124)
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec - in org.java_websocket.issues.Issue1160Test
+Running org.java_websocket.issues.Issue811Test
+	at org.java_websocket.server.WebSocketServer.onWebsocketMessage(WebSocketServer.java:718)
+	at org.java_websocket.drafts.Draft_6455.processFrameBinary(Draft_6455.java:959)
+	at org.java_websocket.drafts.Draft_6455.processFrame(Draft_6455.java:912)
+	at org.java_websocket.WebSocketImpl.decodeFrames(WebSocketImpl.java:401)
+	at org.java_websocket.WebSocketImpl.decode(WebSocketImpl.java:233)
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.doDecode(WebSocketServer.java:1114)
+	at org.java_websocket.server.WebSocketServer$WebSocketWorker.run(WebSocketServer.java:1086)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1 sec - in org.java_websocket.issues.Issue811Test
+Running org.java_websocket.issues.Issue941Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.007 sec - in org.java_websocket.issues.Issue941Test
+Running org.java_websocket.issues.Issue661Test
+[WebSocketSelector-335] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.165 sec - in org.java_websocket.issues.Issue661Test
+Running org.java_websocket.issues.Issue713Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 sec - in org.java_websocket.issues.Issue713Test
+Running org.java_websocket.issues.Issue997Test
+Tests run: 6, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 4.08 sec <<< FAILURE! - in org.java_websocket.issues.Issue997Test
+test_localServer_ServerLocalhost_ClientLocalhost_CheckDefault(org.java_websocket.issues.Issue997Test)  Time elapsed: 1.007 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.java_websocket.issues.Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckDefault(Issue997Test.java:111)
+
+test_localServer_ServerLocalhost_ClientLocalhost_CheckInactive(org.java_websocket.issues.Issue997Test)  Time elapsed: 1.007 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.java_websocket.issues.Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckInactive(Issue997Test.java:102)
+
+test_localServer_ServerLocalhost_Client127_CheckInactive(org.java_websocket.issues.Issue997Test)  Time elapsed: 1.007 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.java_websocket.issues.Issue997Test.test_localServer_ServerLocalhost_Client127_CheckInactive(Issue997Test.java:74)
+
+test_localServer_ServerLocalhost_ClientLocalhost_CheckActive(org.java_websocket.issues.Issue997Test)  Time elapsed: 1.008 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.java_websocket.issues.Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckActive(Issue997Test.java:93)
+
+Running org.java_websocket.issues.Issue677Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.java_websocket.issues.Issue677Test
+Running org.java_websocket.issues.Issue879Test
+[WebSocketSelector-2249] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-2766] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-3382] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-4071] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-4687] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-5367] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-6075] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-6840] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-7646] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-8468] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-9335] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-10236] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-11192] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-12143] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+[WebSocketSelector-13176] ERROR org.java_websocket.server.WebSocketServer - Shutdown due to fatal error
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.92 sec - in org.java_websocket.issues.Issue879Test
+Running org.java_websocket.issues.Issue580Test
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:461)
+	at sun.nio.ch.Net.bind(Net.java:453)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:222)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.java_websocket.server.WebSocketServer.doSetupSelectorAndServerThread(WebSocketServer.java:567)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:367)
+	at java.lang.Thread.run(Thread.java:750)
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.019 sec - in org.java_websocket.issues.Issue580Test
+Running org.java_websocket.issues.Issue732Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 sec - in org.java_websocket.issues.Issue732Test
+Running org.java_websocket.issues.Issue834Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec - in org.java_websocket.issues.Issue834Test
+Running org.java_websocket.issues.Issue666Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.java_websocket.issues.Issue666Test
+Running org.java_websocket.issues.Issue900Test
+[WebSocketSelector-13592] ERROR org.java_websocket.WebSocketImpl - Exception during channel.close()
+java.io.IOException
+	at org.java_websocket.issues.Issue900Test$ExceptionThrowingByteChannel.close(Issue900Test.java:151)
+	at org.java_websocket.WebSocketImpl.closeConnection(WebSocketImpl.java:550)
+	at org.java_websocket.WebSocketImpl.closeConnection(WebSocketImpl.java:585)
+	at org.java_websocket.server.WebSocketServer.handleIOException(WebSocketServer.java:670)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:412)
+	at java.lang.Thread.run(Thread.java:750)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec - in org.java_websocket.issues.Issue900Test
+Running org.java_websocket.issues.Issue765Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.issues.Issue765Test
+Running org.java_websocket.issues.Issue1142Test
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.009 sec <<< FAILURE! - in org.java_websocket.issues.Issue1142Test
+testWithSSLSession(org.java_websocket.issues.Issue1142Test)  Time elapsed: 4.002 sec  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 4000 milliseconds
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:231)
+	at org.java_websocket.client.WebSocketClient.connectBlocking(WebSocketClient.java:387)
+	at org.java_websocket.issues.Issue1142Test.testWithSSLSession(Issue1142Test.java:99)
+
+Running org.java_websocket.issues.Issue256Test
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.368 sec - in org.java_websocket.issues.Issue256Test
+Running org.java_websocket.issues.Issue825Test
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 15.002 sec <<< FAILURE! - in org.java_websocket.issues.Issue825Test
+testIssue(org.java_websocket.issues.Issue825Test)  Time elapsed: 15.001 sec  <<< ERROR!
+org.junit.runners.model.TestTimedOutException: test timed out after 15000 milliseconds
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:231)
+	at org.java_websocket.client.WebSocketClient.connectBlocking(WebSocketClient.java:387)
+	at org.java_websocket.issues.Issue825Test.testIssue(Issue825Test.java:88)
+
+Running org.java_websocket.issues.Issue598Test
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.322 sec - in org.java_websocket.issues.Issue598Test
+Running org.java_websocket.issues.Issue962Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.java_websocket.issues.Issue962Test
+Running org.java_websocket.issues.Issue847Test
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.752 sec - in org.java_websocket.issues.Issue847Test
+Running org.java_websocket.issues.Issue609Test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec - in org.java_websocket.issues.Issue609Test
+Running org.java_websocket.issues.Issue890Test
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.141 sec - in org.java_websocket.issues.Issue890Test
+Running org.java_websocket.server.WebSocketServerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.java_websocket.server.WebSocketServerTest
+Running org.java_websocket.server.DefaultWebSocketServerFactoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.server.DefaultWebSocketServerFactoryTest
+Running org.java_websocket.server.DefaultSSLWebSocketServerFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in org.java_websocket.server.DefaultSSLWebSocketServerFactoryTest
+Running org.java_websocket.server.CustomSSLWebSocketServerFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.server.CustomSSLWebSocketServerFactoryTest
+Running org.java_websocket.server.SSLParametersWebSocketServerFactoryTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.server.SSLParametersWebSocketServerFactoryTest
+Running org.java_websocket.client.SchemaCheckTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.client.SchemaCheckTest
+Running org.java_websocket.client.HeadersTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.java_websocket.client.HeadersTest
+Running org.java_websocket.client.AttachmentTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.java_websocket.client.AttachmentTest
+
+Results :
+
+Failed tests: 
+  Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckDefault:111 null
+  Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckInactive:102 null
+  Issue997Test.test_localServer_ServerLocalhost_Client127_CheckInactive:74 null
+  Issue997Test.test_localServer_ServerLocalhost_ClientLocalhost_CheckActive:93 null
+
+Tests in error: 
+  Issue764Test.testIssue:87 » TestTimedOut test timed out after 2000 millisecond...
+  Issue1142Test.testWithSSLSession:99 » TestTimedOut test timed out after 4000 m...
+  Issue825Test.testIssue:88 » TestTimedOut test timed out after 15000 millisecon...
+
+Tests run: 325, Failures: 4, Errors: 3, Skipped: 1
+
+INFO: Surefire failed when running tests for XQfl8Pe2ovgszaIREX0F+f36ua3Ch5DaNJGjigg1VuA=
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/home/tanzim/flaky-study/Java-WebSocket/.nondex" -DnondexJarDir="/home/tanzim/flaky-study/Java-WebSocket/.nondex" -DnondexExecid=aQybEHIsMuMHwphVjlr9NqbxhPKGR3EziZa4X2usTYA= -DnondexLogging=CONFIG
+[WARNING] org.java_websocket.issues.Issue997Test#test_localServer_ServerLocalhost_ClientLocalhost_CheckActive
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/home/tanzim/flaky-study/Java-WebSocket/.nondex" -DnondexJarDir="/home/tanzim/flaky-study/Java-WebSocket/.nondex" -DnondexExecid=elbXXdqovLSi8OLfnooeW2cso1SkWz7A2+Lwk0zkoUY= -DnondexLogging=CONFIG
+[WARNING] org.java_websocket.issues.Issue997Test#test_localServer_ServerLocalhost_ClientLocalhost_CheckActive
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/home/tanzim/flaky-study/Java-WebSocket/.nondex" -DnondexJarDir="/home/tanzim/flaky-study/Java-WebSocket/.nondex" -DnondexExecid=XQfl8Pe2ovgszaIREX0F+f36ua3Ch5DaNJGjigg1VuA= -DnondexLogging=CONFIG
+[WARNING] org.java_websocket.issues.Issue997Test#test_localServer_ServerLocalhost_ClientLocalhost_CheckActive
+[INFO] *********
+[INFO] The following tests failed in the clean run:
+[WARNING] org.java_websocket.issues.Issue825Test#testIssue
+[WARNING] org.java_websocket.issues.Issue256Test#runReconnectCloseBlocking[9]
+[WARNING] org.java_websocket.issues.Issue764Test#testIssue
+[WARNING] org.java_websocket.issues.Issue1142Test#testWithSSLSession
+[WARNING] org.java_websocket.issues.Issue997Test#test_localServer_ServerLocalhost_ClientLocalhost_CheckDefault
+[WARNING] org.java_websocket.issues.Issue997Test#test_localServer_ServerLocalhost_ClientLocalhost_CheckInactive
+[WARNING] org.java_websocket.issues.Issue997Test#test_localServer_ServerLocalhost_Client127_CheckInactive
+[WARNING] org.java_websocket.issues.Issue890Test#testWithSSLSession
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] org.java_websocket.issues.Issue997Test#test_localServer_ServerLocalhost_ClientLocalhost_CheckActive
+[INFO] Test results can be found at: 
+[INFO] file:///home/tanzim/flaky-study/Java-WebSocket/.nondex/aQybEHIsMuMHwphVjlr9NqbxhPKGR3EziZa4X2usTYA=/test_results.html
+[INFO] [NonDex] The id of this run is: aQybEHIsMuMHwphVjlr9NqbxhPKGR3EziZa4X2usTYA=
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  06:24 min
+[INFO] Finished at: 2026-09-18T20:53:58+06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.illinois:nondex-maven-plugin:2.2.1:nondex (default-cli) on project Java-WebSocket: Unable to execute mojo: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/tanzim/flaky-study/Java-WebSocket/.nondex/aQybEHIsMuMHwphVjlr9NqbxhPKGR3EziZa4X2usTYA= for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+real	6m26.039s
+user	14m26.352s
+sys	1m38.632s
