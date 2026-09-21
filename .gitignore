@@ -64,6 +64,12 @@ venv/
 papers/_t/
 
 # ---------------------------------------------------------------
+# Downloaded paper artifacts — large tarballs, never committed
+# ---------------------------------------------------------------
+*.tar.gz
+flaky-study/fs-output/
+
+# ---------------------------------------------------------------
 # Editors / IDEs / OS
 # ---------------------------------------------------------------
 .idea/
@@ -74,3 +80,6 @@ Thumbs.db
 desktop.ini
 *~
 *.swp
+flaky-study/windows-native-test/
+flaky-study/fs-output-configB/
+flaky-study/fs-output-m16/

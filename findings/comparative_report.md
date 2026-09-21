@@ -154,3 +154,25 @@ surface result rather than trusting it.
 - Module 5 (Docker route, Windows-break test) and Module 6's formal
   cross-check table are not part of this report — this file covers only
   what Modules 2–4 have produced so far.
+
+---
+
+## 10. FlakeSync — a repair tool, not a detector, added 2026-09-21
+
+Full detail: [flakesync_findings.md](flakesync_findings.md),
+[flakesync_report.md](reports/flakesync/flakesync_report.md).
+
+Unlike the three tools above, FlakeSync repairs async flaky tests rather than
+detecting order-dependence or unguaranteed-order flakiness. It doesn't slot
+directly into the ID/OD table above, but two of its findings connect
+directly to what this study has already established:
+
+| Connection to earlier findings | What FlakeSync adds |
+| --- | --- |
+| Same result shape as the iDFlakies default-configuration finding | The artifact's own shipped delay schedule (max 25,600ms) is half the paper's stated `MAX_DELAY` (51,200ms) — a silent under-reporting risk baked into the artifact, independent of anything about this replication's environment |
+| Same result shape as "argLine collision" / config-dependent results across this whole study | FlakeSync's own critical-point search produced two different (though related) answers across 6 repetitions of one pipeline run on one machine — direct evidence the technique is not fully deterministic, which the paper never discloses |
+| A new category this study didn't have yet | The artifact's own evaluation-input row for `elastic-job-lite` uses `master` instead of a pinned SHA — the only row that does — and it broke, concretely, within this study's own run. Filed as `[AVAILABILITY]`/`[STALENESS]`-adjacent: even a well-maintained artifact can carry one silent, unpinned reference that ages worse than everything around it |
+
+**Cross-project note:** `apache/dubbo` is both a FlakeSync subject (M7–M11)
+and RankF's worked example project — unexamined overlap, left for a future
+session.
