@@ -1,0 +1,32 @@
+=== Local flaky-study directories ===
+FlakeSync
+Java-WebSocket
+RankF
+TSVD4J
+commons-dbcp
+commons-pool-src
+delight-nashorn-sandbox
+flakesync-artifact_latest.tar.gz
+fluent-logger-java
+fs-output
+fs-output-configB
+fs-output-m16
+idoft
+marine-api
+nondex
+openpojo
+rxjava2-extras
+tsvd4j-sanity
+
+=== Wei dataset rows matching locally-cloned project names ===
+https://github.com/apache/incubator-dubbo.git
+https://github.com/ktuukkan/marine-api.git
+https://github.com/openpojo/openpojo.git
+
+=== marine-api: unique OD tests + SHA in Wei dataset ===
+12 unique OD tests, SHA af0003847db9ba822f67d4f1dceb8de3fe63250a -- exact match to idflakies_findings.md's confirmed 12/12
+
+=== dubbo known-answer pair (paper Fig 1/2) ===
+https://github.com/apache/incubator-dubbo.git,737f7a7ea67832d7f17517326fb2491d0a086dd7,dubbo-rpc/dubbo-rpc-dubbo,org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest.testDubboProtocolWithMina,org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest.testDubboProtocol,,brittle,,,
+https://github.com/apache/incubator-dubbo.git,737f7a7ea67832d7f17517326fb2491d0a086dd7,dubbo-rpc/dubbo-rpc-dubbo,org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest.testDubboProtocolWithMina,org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest.testDubboProtocolMultiService,,brittle,,,
+https://github.com/apache/incubator-dubbo.git,737f7a7ea67832d7f17517326fb2491d0a086dd7,dubbo-rpc/dubbo-rpc-dubbo,org.apache.dubbo.rpc.protocol.dubbo.DubboProtocolTest.testDubboProtocolWithMina,org.apache.dubbo.rpc.protocol.dubbo.RpcFilterTest.testRpcFilter,,brittle,,,

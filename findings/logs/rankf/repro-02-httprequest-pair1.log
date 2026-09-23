@@ -1,0 +1,9 @@
+2026-09-23 02:01:43.758:INFO:oejs.Server:jetty-8.1.9.v20130131
+2026-09-23 02:01:44.043:INFO:oejs.AbstractConnector:Started SelectChannelConnector@0.0.0.0:11594
+2026-09-23 02:01:44.065:INFO:oejs.Server:jetty-8.1.9.v20130131
+2026-09-23 02:01:44.073:INFO:oejs.AbstractConnector:Started SelectChannelConnector@0.0.0.0:11601
+EXIT CODE: 0
+-------------------------------------------------------------------------------
+Test set: com.github.kevinsawicki.http.HttpRequestTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.896 s -- in com.github.kevinsawicki.http.HttpRequestTest

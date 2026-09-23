@@ -1,0 +1,76 @@
+RankF artifact link probe - 2026-09-22
+
+Method: HEAD request (PowerShell Invoke-WebRequest -UseBasicParsing) for initial
+status codes, then WebFetch + curl for actual content verification (per the
+plan's warning that anonymous.4open.science and Box return 200/404 status codes
+that don't reflect real content).
+
+1. hub - https://sites.google.com/view/ranking-od-relevant-tests
+   HEAD status: 200
+   Content check: LOADS with real content. Sections for RankF_L/RankF_O
+   implementation, evaluation results, fine-tuned models, GPT experiment
+   resources. Links out to the anonymous code repo, Google Drive datasets,
+   Box models, GPT prompts folder.
+   Verdict: AVAILABLE
+
+2. code - https://anonymous.4open.science/r/RankF-DDED/README.md
+   HEAD status: 200
+   Content check: WebFetch alone returned only the JS-shell header ("Anonymous
+   Github") - confirms the plan's warning that a 200 here proves nothing.
+   Verified with curl against the API endpoint instead:
+     curl https://anonymous.4open.science/api/repo/RankF-DDED/file/README.md
+   -> returned the real README.md content: full RankF_L and RankF_O setup
+      instructions, dependency versions, input file locations, run commands.
+   Verified the zip download also works:
+     curl -L -o rankf-code-test.zip https://anonymous.4open.science/api/repo/RankF-DDED/zip
+   -> HTTP 200, 11,789,950 bytes, starts with "PK" (real zip, not an error page).
+   Verdict: AVAILABLE - repository has real content, code retrievable.
+
+3. models - https://utexas.box.com/s/adfk1run5mcae984pbpd9p0b6b0vszt1
+   HEAD status: 404 (after a 301 redirect utexas.box.com -> utexas.app.box.com)
+   Content check: curl -D - against the redirected URL shows Box's OWN server
+   returning a genuine HTTP 404 (not a JS-shell 200 masking a client-side
+   error) - headers show box-request-id, box_visitor_id cookies etc., i.e.
+   this is Box's real backend responding, and it says the shared link does
+   not exist.
+   Searched for a permanent home: no RankF repo and no model-weights repo
+   under github.com/UT-SE-Research (13 repos checked: iDFlakies,
+   experiment-utils, paper-utils, ODRepair, TSVD4J, optimizing-ci-builds,
+   ci-analyzes, FlakyQ, pitest-random, FlakeSync, FlakyLens, TDRepro, and a
+   stray "Apache License 2.0" entry). No alternative source found.
+   Verdict: GONE. [AVAILABILITY] - the fine-tuned BigBird models the paper
+   published are no longer retrievable from the stated location, and no
+   permanent replacement exists. Module 7's inference path (Step 24) cannot
+   use the paper's own models; RankF_L must be trained from scratch or
+   skipped.
+
+4. prompts - https://drive.google.com/drive/folders/10j9i19WapznQ8xEbV570_m0f0tCeOHLn
+   HEAD status: 200
+   Content check: WebFetch shows a real, accessible folder "prompts_for_gpt"
+   with 3 files: bss_log.txt (6 KB), vp_log.txt (2 KB), vpc_log.txt (2 KB),
+   all modified 2024-03-23. No access-denied message.
+   Verdict: AVAILABLE (browser/manual download needed - small, low priority,
+   only relevant if the GPT-comparison side-experiment is pursued later).
+
+5. weidata - https://sites.google.com/view/tuscan-squares-probabilities
+   HEAD status: 200
+   Content check: LOADS with real content. Three download links given:
+     a) "Original Dataset" -> https://cs.gmu.edu/~winglam/publications/2021/WeiETAL21TACAS.zip
+        -> curl returns HTTP 200 but Content-Type: text/html, and the body is
+           GMU's CS-department Drupal homepage, not a zip. GMU migrated
+           personal faculty pages off the old path. DEAD LINK.
+           [AVAILABILITY]/[STALENESS] - the paper's cited "original dataset"
+           location no longer serves the file.
+     b) "Dataset Confirmed with Maven Surefire" (Google Drive file id
+        13oGvRlGbg8upaK75q2VTZZwUsxWy4i2P)
+        -> curl -L "https://drive.google.com/uc?export=download&id=..."
+           succeeded directly (no browser needed): HTTP 200, 808,411 bytes,
+           Content-Type: application/octet-stream, real CSV data
+           (gitURL,sha,module,victim,polluter,cleaner,type). WORKS.
+     c) "Implementation/Code" -> https://github.com/Anjiang-Wei/TuscanSquare
+        -> alive (GitHub API confirms), but it is only the Tuscan-square
+           generation algorithm (Tuscan.java), not the OD test dataset itself.
+   Verdict: dataset AVAILABLE via link (b); link (a), the "original" source,
+   is dead.
+
+Timestamp: 2026-09-22 (probe run during this session)

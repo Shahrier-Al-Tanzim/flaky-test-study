@@ -1,0 +1,19 @@
+178db881c2c690f230902bddcb61385f *flaky-study/RankF/rankf-code.zip
+f01bce5fb1742f338acef196fe5e3bbd *flaky-study/RankF/wei-dataset/wei-od-dataset.csv
+---
+-rw-r--r-- 1 Tanzim 197121 86 Sep 21 21:35 flaky-study/RankF/code/RankF_O/10_OTO.txt
+-rw-r--r-- 1 Tanzim 197121 717 Sep 21 21:35 flaky-study/RankF/code/RankF_O/README.md
+-rw-r--r-- 1 Tanzim 197121 43 Sep 21 21:35 flaky-study/RankF/code/RankF_O/setup.sh
+-rw-r--r-- 1 Tanzim 197121 2593 Sep 21 21:35 flaky-study/RankF/code/README.md
+-rw-r--r-- 1 Tanzim 197121 11789950 Sep 22 03:35 flaky-study/RankF/rankf-code.zip
+-rw-r--r-- 1 Tanzim 197121 808411 Sep 22 03:26 flaky-study/RankF/wei-dataset/wei-od-dataset.csv
+
+--- Per-piece status summary (Step 4) ---
+1. Code (RankF_L / RankF_O)     : OBTAINED - flaky-study/RankF/rankf-code.zip, extracted to code/
+2. Fine-tuned models (Box)       : UNAVAILABLE - link dead, see [AVAILABILITY] in rankf_findings.md
+3. GPT experiment prompts (Drive): AVAILABLE but not yet downloaded (3 small .txt files, low priority - deferred to Module 7 if pursued)
+4. Wei et al. ground-truth data  : OBTAINED - flaky-study/RankF/wei-dataset/wei-od-dataset.csv (via the surviving Drive mirror; the paper's "original" GMU link is dead)
+
+No published checksums exist for any of these four pieces (unlike FlakeSync's
+Zenodo MD5). The MD5s above are self-computed reference points for future
+re-downloads.

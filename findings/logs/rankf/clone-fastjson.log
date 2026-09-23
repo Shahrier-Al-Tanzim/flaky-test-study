@@ -1,0 +1,20 @@
+Cloning into 'rankf-check-fastjson'...
+Updating files:  44% (1432/3249)Updating files:  45% (1463/3249)Updating files:  46% (1495/3249)Updating files:  47% (1528/3249)Updating files:  48% (1560/3249)Updating files:  49% (1593/3249)Updating files:  50% (1625/3249)Updating files:  51% (1657/3249)Updating files:  52% (1690/3249)Updating files:  53% (1722/3249)Updating files:  54% (1755/3249)Updating files:  55% (1787/3249)Updating files:  56% (1820/3249)Updating files:  56% (1830/3249)Updating files:  57% (1852/3249)Updating files:  58% (1885/3249)Updating files:  59% (1917/3249)Updating files:  60% (1950/3249)Updating files:  60% (1976/3249)Updating files:  61% (1982/3249)Updating files:  62% (2015/3249)Updating files:  63% (2047/3249)Updating files:  63% (2075/3249)Updating files:  64% (2080/3249)Updating files:  65% (2112/3249)Updating files:  66% (2145/3249)Updating files:  66% (2160/3249)Updating files:  67% (2177/3249)Updating files:  68% (2210/3249)Updating files:  69% (2242/3249)Updating files:  69% (2252/3249)Updating files:  70% (2275/3249)Updating files:  70% (2303/3249)Updating files:  71% (2307/3249)Updating files:  72% (2340/3249)Updating files:  72% (2347/3249)Updating files:  73% (2372/3249)Updating files:  74% (2405/3249)Updating files:  74% (2423/3249)Updating files:  75% (2437/3249)Updating files:  76% (2470/3249)Updating files:  76% (2474/3249)Updating files:  77% (2502/3249)Updating files:  78% (2535/3249)Updating files:  79% (2567/3249)Updating files:  79% (2570/3249)Updating files:  80% (2600/3249)Updating files:  80% (2613/3249)Updating files:  81% (2632/3249)Updating files:  82% (2665/3249)Updating files:  82% (2667/3249)Updating files:  82% (2685/3249)Updating files:  83% (2697/3249)Updating files:  84% (2730/3249)Updating files:  84% (2754/3249)Updating files:  85% (2762/3249)Updating files:  86% (2795/3249)Updating files:  87% (2827/3249)Updating files:  87% (2835/3249)Updating files:  88% (2860/3249)Updating files:  88% (2862/3249)Updating files:  88% (2870/3249)Updating files:  89% (2892/3249)Updating files:  89% (2914/3249)Updating files:  90% (2925/3249)Updating files:  90% (2928/3249)Updating files:  91% (2957/3249)Updating files:  91% (2989/3249)Updating files:  92% (2990/3249)Updating files:  92% (3021/3249)Updating files:  93% (3022/3249)Updating files:  94% (3055/3249)Updating files:  95% (3087/3249)Updating files:  96% (3120/3249)Updating files:  96% (3128/3249)Updating files:  97% (3152/3249)Updating files:  97% (3175/3249)Updating files:  98% (3185/3249)Updating files:  99% (3217/3249)Updating files:  99% (3232/3249)Updating files: 100% (3249/3249)Updating files: 100% (3249/3249), done.
+Note: switching to '5c6d6fd471ea1fab59f0df2dd31e0b936806780d'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 5c6d6fd47 Merge pull request #2838 from Omega-Ariston/fix-issue2830

@@ -1,0 +1,8 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+EXIT CODE: 0
+-------------------------------------------------------------------------------
+Test set: org.springframework.ws.soap.security.xwss.callback.SpringDigestPasswordValidationCallbackHandlerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 s - in org.springframework.ws.soap.security.xwss.callback.SpringDigestPasswordValidationCallbackHandlerTest

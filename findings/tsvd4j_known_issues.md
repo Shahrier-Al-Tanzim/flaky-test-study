@@ -1,4 +1,4 @@
-# TSVD4J — known issues found by reading the source
+# TSVD4J - known issues found by reading the source
 
 Everything here was found by reading the artifact at
 `flaky-study\TSVD4J` (master, commit `4958a7f`) against the ICSE 2023 paper.
@@ -50,7 +50,7 @@ if (!threadCountList.contains(currentThreadId)) {   // Long tested against List<
 
 `contains(currentThreadId)` autoboxes a `long` to `Long` and compares it to
 `String` elements, so it is **always false**. A new string is appended on every
-interception point — millions of them — and never removed. The list is a plain
+interception point - millions of them - and never removed. The list is a plain
 `ArrayList` mutated from many threads, so it is also itself thread-unsafe.
 
 ### The real mechanism: quadratic slowdown, not heap exhaustion
@@ -63,7 +63,7 @@ actual mechanism is worse and more specific:
 one entry on *every* interception point and is never pruned, each new
 interception point scans the entire history of every previous one. Cost per
 operation grows linearly with operations already done, so total cost is
-**quadratic** — O(n²). The tool does not slow down gradually; it falls off a
+**quadratic** - O(n²). The tool does not slow down gradually; it falls off a
 cliff.
 
 The same pattern appears in at least three more places, all `ArrayList` +
@@ -79,7 +79,7 @@ The same pattern appears in at least three more places, all `ArrayList` +
 fork):
 
 - Forked test JVM accumulated **14,776 seconds of CPU time in ~79 minutes of
-  wall clock** — i.e. it was saturating roughly 3 cores continuously. The
+  wall clock** - i.e. it was saturating roughly 3 cores continuously. The
   process was *not* blocked or parked; it was busy.
 - First ~30 test classes (simple, single-threaded: `framing`, `exceptions`,
   `drafts`, `extensions`) finished in **34 seconds total**.
@@ -87,7 +87,7 @@ fork):
 - By class ~55 it was spending **25+ minutes on a single class** with no
   forward progress, still burning CPU the whole time.
 
-That profile — cheap early, catastrophic late, CPU-saturated throughout — is
+That profile - cheap early, catastrophic late, CPU-saturated throughout - is
 the signature of the quadratic scan, not of memory pressure.
 
 Proposed (unapplied) fix:
@@ -102,19 +102,19 @@ violation detector, on the exact data structure class the tool is built to
 watch. Also: `Agent.java` prints `Total # Thread Count = <size>`, so every
 reported thread count in any TSVD4J run is wrong. And the quadratic profile
 means the paper's 6-hour-per-application timeout is not a generous safety
-margin — it is a hard ceiling the tool hits by design on any suite large
+margin - it is a hard ceiling the tool hits by design on any suite large
 enough.
 
-**Second confirmed instance, on a different project — refines the trigger
+**Second confirmed instance, on a different project - refines the trigger
 condition.** On `commons-dbcp`, this bug fired on the *very first* test
 class of a completely fresh JVM (`-DreuseForks=false`, so no state carried
-over from anything prior) — not after ~55 classes like on Java-WebSocket.
+over from anything prior) - not after ~55 classes like on Java-WebSocket.
 Root cause: that one test (`TestDriverAdapterCPDS`) spins up 200 real
-threads each doing 5000 connection-pool operations — 1,000,000 total
+threads each doing 5000 connection-pool operations - 1,000,000 total
 operations in one test method. Measured: 2326 CPU-seconds burned in ~19
 minutes of wall clock (saturating ~2 cores) with zero progress. This
 confirms the bug's real trigger is **total interception-point count**, not
-"how many classes have run" — a single sufficiently intense test can
+"how many classes have run" - a single sufficiently intense test can
 trigger it immediately, with no accumulated history required. See
 [tsvd4j_findings.md](tsvd4j_findings.md) run 2026-09-06-10.
 
@@ -127,7 +127,7 @@ trims the *inner* list to `lastTPWindow = 5`. The outer map keeps one entry per
 distinct object ever touched. Combined with `planDistance = 10000000` ms
 (~2.8 h), effectively nothing ever ages out, so `dangerousTPPairs` grows too.
 
-No clean patch — the workaround in the run guide is `-DreuseForks=false`, which
+No clean patch - the workaround in the run guide is `-DreuseForks=false`, which
 gives each test class a fresh JVM and resets all static state.
 
 **Write-up angle:** the memory profile is unbounded in the number of distinct
@@ -159,7 +159,7 @@ So **`Collection.add` is never instrumented**, and the tracked API list is
 with this bug active.
 
 This is a plausible partial explanation for API-only finding 0 pairs on P1 and
-only 12 across all 12 applications, versus 43 for field tracking — the paper
+only 12 across all 12 applications, versus 43 for field tracking - the paper
 attributes that gap entirely to field tracking being more powerful.
 
 **Write-up angle:** re-run the API-only column with the off-by-one fixed and
@@ -180,7 +180,7 @@ this.originalArgLine = localProperties.getProperty("argLine", "");
 and overwriting the project property with only the `-javaagent` flag. Any
 `--add-opens`, `-Xmx`, or JaCoCo agent the project needed is dropped. If the
 project already configured `<argLine>` inside surefire, the config gains a
-duplicate child and surefire may take the wrong one — in which case the agent
+duplicate child and surefire may take the wrong one - in which case the agent
 never attaches and `.tsvd4j/` is empty **with no error**.
 
 ---
@@ -189,7 +189,7 @@ never attaches and `.tsvd4j/` is empty **with no error**.
 
 `TSVD4JMojo` injects `edu.utexas.ece.tsvd4j.listener.TestListener` through
 surefire's `listener` property, and the class `extends
-org.junit.runner.notification.RunListener` — JUnit 4. On a JUnit 5 project the
+org.junit.runner.notification.RunListener` - JUnit 4. On a JUnit 5 project the
 property is ignored, losing both per-test attribution and the incremental
 output that makes an interrupted run salvageable.
 
@@ -244,7 +244,7 @@ instrumented. This is a large part of why runtime explodes on real projects.
 The paper says "Java 8 and up", which is true only up to Java 16.
 
 **Write-up angle:** this is the Tier 4 experiment in
-[next_steps.md](next_steps.md) — quantify exactly where the tool stops working
+[next_steps.md](next_steps.md) - quantify exactly where the tool stops working
 and what it would take to support current LTS JDKs.
 
 ---
@@ -258,7 +258,7 @@ and what it would take to support current LTS JDKs.
 return "\"" + result + "\"";
 ```
 
-That value is used in two places — the `-javaagent` argument and an
+That value is used in two places - the `-javaagent` argument and an
 `additionalClasspathElement`. A quote mark is an **illegal character in a
 Windows file path**, so as soon as Surefire treats the string as a real file
 location, it fails. Observed in `mvn -X` output as a stray trailing quote
@@ -271,7 +271,7 @@ inside the classpath list:
 Immediately after that line the log jumps to `Tests run: 0` with no fork
 attempt at all. Every mode (`-Dapi`, `-Dfield`, default) produces zero output,
 in ~4 seconds, forever. **Unlike issues 1–3, there is no command-line
-workaround** — the string is built unconditionally in Java code with no
+workaround** - the string is built unconditionally in Java code with no
 property to override it.
 
 Made much harder to diagnose by issue 12 below. Fix and step-by-step
@@ -295,8 +295,8 @@ its own right.
 ```
 
 The exception is swallowed, logged at **INFO** level as a single vague line,
-and the build then reports `BUILD SUCCESS`. The underlying cause — the actual
-message and stack trace — is discarded entirely and is **not** recovered even
+and the build then reports `BUILD SUCCESS`. The underlying cause - the actual
+message and stack trace - is discarded entirely and is **not** recovered even
 with `-X`.
 
 Practical effect: issue 11 presented as "the build succeeded, 0 tests ran, no
@@ -305,7 +305,7 @@ the real cause required inspecting `-X` debug output line by line and testing
 the agent jar outside Maven.
 
 **Write-up angle:** silent failure with a success exit code is worse than a
-crash — a CI pipeline using this tool would report green while collecting no
+crash - a CI pipeline using this tool would report green while collecting no
 data at all.
 
 ---
@@ -317,15 +317,14 @@ Observed directly in a Stage A run on Java-WebSocket. `Issue941Test` calls
 promptly. Under instrumentation the run reached that class and made no
 progress for 25+ minutes while saturating CPU.
 
-Related: `Issue825Test` sleeps 10 s inside a 15 s limit — injected delays push
+Related: `Issue825Test` sleeps 10 s inside a 15 s limit - injected delays push
 it over. And a `BindException: Address already in use` cascade appears in
 server tests when a port is not released before the next test binds it.
 
 **Write-up angle:** this is the invasiveness question the paper never
 addresses. TSVD4J changes the timing of the program it measures, and that
 change is large enough to break tests that pass without it. Any pair count it
-reports comes from a program behaving differently than it does in production —
-so how much of what it finds is reachable in the un-instrumented program?
+reports comes from a program behaving differently than it does in production - so how much of what it finds is reachable in the un-instrumented program?
 Quantify by diffing the baseline `target\surefire-reports\` against the
 instrumented one.
 
@@ -334,29 +333,29 @@ instrumented one.
 ## 14. (L) `-DreuseForks=false` cannot reset state *inside* a suite class
 
 Observed directly during Stage D on Java-WebSocket. Surefire only starts a
-fresh fork **between top-level test classes** — but `AllTests.java` (and
+fresh fork **between top-level test classes** - but `AllTests.java` (and
 `AllClientTests`, `AllIssueTests`, etc.) is itself just *one* top-level class
 that internally runs dozens of other test classes via JUnit's
 `@Suite.SuiteClasses`. Surefire has no visibility into that internal list, so
 `-DreuseForks=false` cannot reset TSVD4J's leaking static state (issue 2)
-partway through a suite — only once the *entire* suite class finishes and its
+partway through a suite - only once the *entire* suite class finishes and its
 fork exits.
 
 Practical effect: because `AllTests` runs first (alphabetical) and is left in
-the run (per the guide's own advice — excluding suite classes "risks missing
+the run (per the guide's own advice - excluding suite classes "risks missing
 whatever cross-class state a suite run might exercise differently"), the
 quadratic-slowdown bug in issue 2 gets a much longer, uninterrupted window to
 compound inside `AllTests` than it does for any of the many standalone
 classes that follow it. This didn't fatally stall Stage A or C, but it is the
 same underlying risk waiting to resurface on a larger suite or a slower
-machine — `-DreuseForks=false` is a **per-Surefire-class** mitigation, not a
+machine - `-DreuseForks=false` is a **per-Surefire-class** mitigation, not a
 per-JUnit-class one, and this project's own suite classes are exactly the
 case that falls through that gap.
 
 **Write-up angle:** combined with issue 8 (suite classes cause double
 execution), this means the workaround guide already recommends for the
 quadratic bug (W2) provides *no protection at all* for the portion of the
-suite that runs through `AllTests` and friends — a fork-level fix cannot help
+suite that runs through `AllTests` and friends - a fork-level fix cannot help
 with a problem that exists below the fork's own granularity. The only
 no-code mitigation is excluding suite classes outright
 (`-Dsurefire.excludes=**/All*Tests.java`), which trades this risk for losing
@@ -368,9 +367,9 @@ whatever cross-class state the suite might have exercised.
 
 Confirmed directly with a controlled test in `tsvd4j-sanity` (`UnsafeTest.java`,
 `twoWritersConcurrentHashMap`): two threads calling `.put()` on a
-`java.util.concurrent.ConcurrentHashMap` — a class from Java's own standard
+`java.util.concurrent.ConcurrentHashMap` - a class from Java's own standard
 library, specifically designed and documented to be safe for exactly this
-pattern — was reported as a conflicting pair:
+pattern - was reported as a conflicting pair:
 
 ```
 Conflicting pairs found: com/example/UnsafeTest|put|92:com/example/UnsafeTest|put|92
@@ -379,7 +378,7 @@ Conflicting pairs found: com/example/UnsafeTest|put|92:com/example/UnsafeTest|pu
 Meanwhile, two other genuinely-safe patterns tested at the same time were
 correctly left silent: writes protected by `synchronized` on a shared lock,
 and two threads that never actually overlap in time (`t1.join()` called
-before `t2.start()`). So this isn't TSVD4J being universally over-eager — it
+before `t2.start()`). So this isn't TSVD4J being universally over-eager - it
 specifically fails to special-case thread-safe collection classes. It tracks
 `Map.put()` (and presumably the rest of `API.txt`'s ~260 methods) by method
 signature alone, with no awareness that `ConcurrentHashMap`, `Vector`,
@@ -388,30 +387,30 @@ synchronized classes already guarantee the exact safety property the tool is
 checking for.
 
 **Write-up angle:** the paper reports pairs found but never checks how many
-are real bugs vs. false alarms — this is a direct, reproducible answer: at
+are real bugs vs. false alarms - this is a direct, reproducible answer: at
 least 1 of 3 tested "should be safe" patterns produced a false positive, a
 33% false-positive rate on this tiny sample. Any of TSVD4J's 55
 paper-reported pairs that involve a `java.util.concurrent` class deserves a
 second look before being counted as a real bug. A cheap, high-value fix
 would be adding the `java.util.concurrent` package (or a specific
 already-synchronized-classes list) to `Agent.blackListContains` (see issue
-9) — same mechanism already used to skip `java.`/`javax.`/`org.junit.` etc.
+9) - same mechanism already used to skip `java.`/`javax.`/`org.junit.` etc.
 
-**Confirmed on real, unmodified production code — no longer just a
+**Confirmed on real, unmodified production code - no longer just a
 hand-written test.** Ran API-only mode on `apache/commons-dbcp` (a real
 connection-pooling library, not written or modified for this study) and
-got 6 conflicting pairs. **All 6 confirmed false positives** — 3 hit
+got 6 conflicting pairs. **All 6 confirmed false positives** - 3 hit
 `ConcurrentHashMap`-backed fields in `commons-dbcp` itself (`validatingSet`
 and `pcMap` in `AbstractConnectionFactory`/`KeyedCPDSConnectionFactory`),
 and the other 3 hit a `ConcurrentHashMap`-backed field
-(`allObjects`) in `commons-pool2` — a completely separate library that
+(`allObjects`) in `commons-pool2` - a completely separate library that
 `commons-dbcp` depends on, confirmed by cloning that library's exact
 matching version. Across both libraries, every basic map/set operation was
 represented: `contains`×`remove`, `get`×`put`, `get`×`remove`, and two
 `remove`×`remove` self-pairs. Every one of these is exactly the access
 pattern `ConcurrentHashMap` is built to make safe. A prior attempt on
 `marine-api` (also chosen for genuine `ConcurrentHashMap` usage) found
-nothing in any mode, twice — this is the result that attempt was looking
+nothing in any mode, twice - this is the result that attempt was looking
 for, on a different real project, and then some. Full code walkthrough for
 all 6: [six_pairs_explained.md](six_pairs_explained.md). Run
 detail: [tsvd4j_findings.md](tsvd4j_findings.md) run 2026-09-06-11.
@@ -421,41 +420,41 @@ detail: [tsvd4j_findings.md](tsvd4j_findings.md) run 2026-09-06-11.
 ## 16. (L) The tool reproduces zero of the paper's own results on some projects, for reasons that differ each time
 
 Confirmed directly on `ktuukkan/marine-api` (paper's commit `af00038`): ran
-all three tracking modes exactly as prescribed — API-only, field-only, and
-default (both) — and got **0 conflicting pairs every time**, against the
+all three tracking modes exactly as prescribed - API-only, field-only, and
+default (both) - and got **0 conflicting pairs every time**, against the
 paper's own reported 4, 1, and 5 respectively. Each run was confirmed
 genuinely active, not a silent failure like issue 11/12: field-only alone
 took 185× longer than the untouched baseline, and default mode took 36.5
 minutes with 71/71 (or near-71/71) classes completing normally. The agent
 was demonstrably running and injecting delays the whole time; it just never
 caught anything. **Repeated a second time, independently, with the same
-result** — 6 for 6 across two full runs, with nearly identical timing both
+result** - 6 for 6 across two full runs, with nearly identical timing both
 times, ruling out "one unlucky run" as the explanation. Full detail:
 [tsvd4j_findings.md](tsvd4j_findings.md) run 2026-09-05-09.
 
 **Correction (2026-09-06): re-checked this against the paper's actual
 Table II directly, and the `openpojo` comparison below was stated too
-strongly — fixing it here.** `openpojo` (P6) is reported as API-only=2,
-field-only=**0**, total=2 — only field mode is zero, not "every tracking
+strongly - fixing it here.** `openpojo` (P6) is reported as API-only=2,
+field-only=**0**, total=2 - only field mode is zero, not "every tracking
 mode." The project genuinely reported as 0 across *every* technique
 (RV-Predict, API, field, and total) in the paper's own data is **J5
 (JaConTeBe-lucene)**, not `openpojo`.
 
 That said, the real point stands on its own without needing the `openpojo`
 comparison: **`marine-api`'s own row in the paper reports 4/1/5
-(API/field/total) — and our repeated, confirmed-active runs got 0/0/0,
+(API/field/total) - and our repeated, confirmed-active runs got 0/0/0,
 directly contradicting the paper's specific numbers for this exact
 project**, which is arguably a stronger reproducibility concern than a
 same-project partial zero would be. `openpojo`'s field-only=0 and J5's
 total=0 are both worth keeping in mind as separate, paper-acknowledged data
-points about where the tool struggles — [next_steps.md](next_steps.md)
+points about where the tool struggles - [next_steps.md](next_steps.md)
 already flags `openpojo`'s case correctly (reflection defeating the
-instrumenter, field-only specifically) — but they are not the same claim as
+instrumenter, field-only specifically) - but they are not the same claim as
 what `marine-api` shows here.
 
 **Write-up angle:** if 2 of the paper's 12 evaluated projects are this
 unreliable to reproduce, that is a direct, quantifiable reproducibility
-concern about Table II as a whole — not just "the tool is non-deterministic
+concern about Table II as a whole - not just "the tool is non-deterministic
 by a few pairs" (the caution already noted in Step 8), but "the tool can
 silently reproduce nothing at all" on a meaningful fraction of the paper's
 own benchmark. Worth checking the remaining paper projects specifically for
@@ -465,14 +464,14 @@ this pattern, to see whether it's 2-of-12 or something larger.
 
 ## Suggested order to investigate
 
-1. **Issue 11 + 12** (Windows blocker + silent failure) — already encountered
+1. **Issue 11 + 12** (Windows blocker + silent failure) - already encountered
    directly during this study; the fastest write-up and directly about
    reproducibility.
-2. **Issue 4** (API off-by-one) — cheap, and directly touches a published
+2. **Issue 4** (API off-by-one) - cheap, and directly touches a published
    claim.
-3. **Issue 2** (quadratic slowdown) — now backed by a CPU measurement; pairs
+3. **Issue 2** (quadratic slowdown) - now backed by a CPU measurement; pairs
    naturally with issue 1 (delay curve) as a scalability study.
-4. **Issue 13** (invasiveness) — the most interesting scientific question of
+4. **Issue 13** (invasiveness) - the most interesting scientific question of
    the set.
-5. **Issue 6** (JUnit 5) — establishes how much of today's ecosystem the tool
+5. **Issue 6** (JUnit 5) - establishes how much of today's ecosystem the tool
    can actually reach.

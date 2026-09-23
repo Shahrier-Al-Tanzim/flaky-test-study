@@ -1,0 +1,20 @@
+Cloning into 'rankf-check-springws'...
+Updating files:  63% (753/1184)Updating files:  64% (758/1184)Updating files:  65% (770/1184)Updating files:  66% (782/1184)Updating files:  67% (794/1184)Updating files:  68% (806/1184)Updating files:  69% (817/1184)Updating files:  70% (829/1184)Updating files:  71% (841/1184)Updating files:  72% (853/1184)Updating files:  73% (865/1184)Updating files:  74% (877/1184)Updating files:  75% (888/1184)Updating files:  76% (900/1184)Updating files:  77% (912/1184)Updating files:  78% (924/1184)Updating files:  79% (936/1184)Updating files:  80% (948/1184)Updating files:  81% (960/1184)Updating files:  82% (971/1184)Updating files:  83% (983/1184)Updating files:  84% (995/1184)Updating files:  85% (1007/1184)Updating files:  86% (1019/1184)Updating files:  87% (1031/1184)Updating files:  88% (1042/1184)Updating files:  89% (1054/1184)Updating files:  90% (1066/1184)Updating files:  91% (1078/1184)Updating files:  92% (1090/1184)Updating files:  93% (1102/1184)Updating files:  94% (1113/1184)Updating files:  95% (1125/1184)Updating files:  96% (1137/1184)Updating files:  97% (1149/1184)Updating files:  98% (1161/1184)Updating files:  98% (1167/1184)Updating files:  99% (1173/1184)Updating files: 100% (1184/1184)Updating files: 100% (1184/1184), done.
+Note: switching to 'e8d89c9eb0929dda304174729c9c69fb29f448eb'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at e8d89c9eb SWS-1045 - Upgrade Spring portfolio.

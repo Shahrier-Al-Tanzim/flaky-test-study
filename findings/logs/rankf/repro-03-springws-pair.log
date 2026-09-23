@@ -1,0 +1,25 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in org.springframework.ws.soap.security.xwss.callback.SpringDigestPasswordValidationCallbackHandlerTest
+[ERROR] testAuthenticateUserDigestUserNotFound(org.springframework.ws.soap.security.xwss.callback.SpringDigestPasswordValidationCallbackHandlerTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: Authentication created expected null, but was:<org.springframework.security.authentication.UsernamePasswordAuthenticationToken@5ef582e1: Principal: WSUsernameTokenPrincipalImpl:  Ernie; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_1>
+	at org.springframework.ws.soap.security.xwss.callback.SpringDigestPasswordValidationCallbackHandlerTest.testAuthenticateUserDigestUserNotFound(SpringDigestPasswordValidationCallbackHandlerTest.java:79)
+
+[ERROR] Failures: 
+[ERROR]   SpringDigestPasswordValidationCallbackHandlerTest.testAuthenticateUserDigestUserNotFound:79 Authentication created expected null, but was:<org.springframework.security.authentication.UsernamePasswordAuthenticationToken@5ef582e1: Principal: WSUsernameTokenPrincipalImpl:  Ernie; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_1>
+[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project spring-ws-security: There are test failures.
+[ERROR] 
+[ERROR] Please refer to flaky-study\rankf-check-03\spring-ws-security\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :spring-ws-security

@@ -1,0 +1,1 @@
+iFixFlakies built cleanly on JDK 8, no output because -q suppresses success output (mvn -q clean install -DskipTests)

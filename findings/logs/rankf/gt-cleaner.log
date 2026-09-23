@@ -1,0 +1,11 @@
+EXIT CODE: 0
+== target/surefire-reports/net.sf.marineapi.ais.event.AbstractAISMessageListenerTest.txt ==
+-------------------------------------------------------------------------------
+Test set: net.sf.marineapi.ais.event.AbstractAISMessageListenerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s -- in net.sf.marineapi.ais.event.AbstractAISMessageListenerTest
+== target/surefire-reports/net.sf.marineapi.nmea.parser.SentenceFactoryTest.txt ==
+-------------------------------------------------------------------------------
+Test set: net.sf.marineapi.nmea.parser.SentenceFactoryTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s -- in net.sf.marineapi.nmea.parser.SentenceFactoryTest

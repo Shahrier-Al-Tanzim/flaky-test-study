@@ -1,0 +1,7 @@
+starting prefix (8): ['WPLTest', 'VLWTest', 'SentenceFactoryTest#testRegisterParserWithAlternativeBeginChar', 'RTETest', 'MTATest', 'HDTTest', 'GSATest', 'DPTTest']
+  tested ['WPLTest', 'VLWTest', 'SentenceFactoryTest#testRegisterParserWithAlternativeBeginChar', 'RTETest'] -> FAIL (14.5s)
+  tested ['WPLTest', 'VLWTest'] -> pass (12.6s)
+  tested ['SentenceFactoryTest#testRegisterParserWithAlternativeBeginChar', 'RTETest'] -> FAIL (11.3s)
+  tested ['SentenceFactoryTest#testRegisterParserWithAlternativeBeginChar'] -> FAIL (12.2s)
+result: ['SentenceFactoryTest#testRegisterParserWithAlternativeBeginChar'], status=converged
+invocations=4, total_time=50.6s

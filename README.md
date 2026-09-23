@@ -9,7 +9,7 @@ overlap.
 
 ## Start here
 
-**[findings/tsvd4j_report.md](findings/tsvd4j_report.md)** — a short,
+**[findings/tsvd4j_report.md](findings/tsvd4j_report.md)** - a short,
 readable summary of what was tried, what was found, and a proposed
 research direction. This is the best entry point for anyone wanting the
 headline results without digging through raw logs.
@@ -25,7 +25,7 @@ headline results without digging through raw logs.
   every tracking mode, across two independent runs, against the paper's
   reported 4/1/5.
 - **16 separate bugs and limitations** were found in the tool itself while
-  getting it to run reliably — including a silent crash on Windows, a
+  getting it to run reliably - including a silent crash on Windows, a
   performance defect that turns fast runs into multi-hour stalls, and a
   safety timeout that doesn't work.
 - The paper never measures its own false-positive rate. This work suggests
@@ -38,19 +38,19 @@ Full detail for each of these lives in the files below.
 
 ```
 findings/
-  tsvd4j_report.md          — short summary (start here)
-  tsvd4j_findings.md        — full chronological findings log, run by run
-  tsvd4j_known_issues.md    — 16 catalogued bugs/limitations in TSVD4J itself
-  six_pairs_explained.md    — every flagged pair from the main result, with source code
-  research_gaps.md          — open questions framed as research directions
-  logs/                     — saved output from every test run
-  reports/                  — raw TSVD4J output (conflicting-pairs, per-test results)
+  tsvd4j_report.md - short summary (start here)
+  tsvd4j_findings.md - full chronological findings log, run by run
+  tsvd4j_known_issues.md - 16 catalogued bugs/limitations in TSVD4J itself
+  six_pairs_explained.md - every flagged pair from the main result, with source code
+  research_gaps.md - open questions framed as research directions
+  logs/ - saved output from every test run
+  reports/ - raw TSVD4J output (conflicting-pairs, per-test results)
 
 papers/
   The four papers from the reading list (FlakeSync, RankF, FlakyLens,
   TSVD4J), plus extracted plain-text versions for reference.
 
-Observations.md              — a running log of test-execution notes and
+Observations.md - a running log of test-execution notes and
                                 observations across the whole study
 ```
 

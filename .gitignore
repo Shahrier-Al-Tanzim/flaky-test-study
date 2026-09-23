@@ -1,10 +1,10 @@
 # ---------------------------------------------------------------
-# Private research notes — kept out of the repo deliberately
+# Private research notes - kept out of the repo deliberately
 # ---------------------------------------------------------------
 planning/
 
 # ---------------------------------------------------------------
-# Cloned upstream repositories — NOT ours to commit.
+# Cloned upstream repositories - NOT ours to commit.
 # These are other people's projects, each with its own .git folder.
 # Committing them would either break (nested repos) or vendor
 # someone else's code under our name. Anyone reproducing this work
@@ -44,7 +44,7 @@ idflakies-report/
 # Exception: findings/ holds copies of logs + reports we DO want on
 # GitHub. Un-ignore it against the *.log / target / surefire-reports
 # rules above (a leading "!" only works if no parent directory was
-# already excluded, which is true here — findings/ isn't matched by
+# already excluded, which is true here - findings/ isn't matched by
 # any rule above).
 # ---------------------------------------------------------------
 !findings/
@@ -59,15 +59,27 @@ __pycache__/
 venv/
 
 # ---------------------------------------------------------------
-# papers/ scratch files — never commit these
+# papers/ scratch files - never commit these
 # ---------------------------------------------------------------
 papers/_t/
 
 # ---------------------------------------------------------------
-# Downloaded paper artifacts — large tarballs, never committed
+# Downloaded paper artifacts - large tarballs, never committed
 # ---------------------------------------------------------------
 *.tar.gz
 flaky-study/fs-output/
+
+# ---------------------------------------------------------------
+# RankF artifact - code, fine-tuned models, datasets
+# ---------------------------------------------------------------
+flaky-study/RankF/
+flaky-study/iFixFlakies/
+flaky-study/marine-api-rankf/
+*.zip
+*.safetensors
+*.bin
+*.pt
+*.ckpt
 
 # ---------------------------------------------------------------
 # Editors / IDEs / OS
